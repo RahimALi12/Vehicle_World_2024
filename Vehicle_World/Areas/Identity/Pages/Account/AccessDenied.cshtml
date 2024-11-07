@@ -1,0 +1,49 @@
+﻿@page
+@model AccessDeniedModel
+@{
+    ViewData["Title"] = "Access denied";
+}
+
+
+
+<style>
+
+    .access-denied {
+        margin-top: 20px;
+        text-align: center;
+        background-color: #fff;
+        padding: 200px;
+        border-radius: 10px;
+        /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); */
+    }
+
+    .alert-message {
+        /* display: none; */
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+        color: white;
+        background: red;
+    }
+
+    .ok-button {
+        margin-top: 10px;
+        width: 150px;
+    }
+</style>
+
+    <div class="access-denied">
+        <div class="alert alert-danger alert-message" role="alert">
+            You do not have permission to access this page.
+        </div>
+        <button class="btn btn-success ok-button">OK</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.ok-button').click(function () {
+                window.location.href = '@Url.Action("Index", "Website")';
+            });
+        });
+    </script>
+

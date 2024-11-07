@@ -1,0 +1,621 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+    .navbar .nav-item .sell {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
+        color: white;
+        font-weight: 700;
+        width: 100px;
+        border-radius: 50px;
+        transition: all 1s ease;
+    }
+
+    .navbar .nav-item .buyer {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
+        color:;
+        white;
+        font-weight: 700;
+        width: 100px;
+        border-radius: 50px;
+        transition: all 1s ease;
+    }
+
+    
+    .navbar.scrolled {
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 1s ease, color 1s ease;
+    }
+
+    .navbar .navbar-brand,
+    .navbar .nav-link,
+    .navbar .hamburger-menu,
+    .navbar .translate-icon,
+    .navbar .darkmode-icon {
+        color: white;
+        transition: color 1s ease;
+    }
+
+    .navbar.scrolled .navbar-brand,
+    .navbar.scrolled .nav-link,
+    .navbar.scrolled .hamburger-menu,
+    .navbar.scrolled .translate-icon,
+    .navbar.scrolled .darkmode-icon {
+        color: black;
+    }
+
+    .navbar.scrolled .nav-item .sell {
+        background-color: #00559f;
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transition: all 1s ease;
+    }
+
+    .navbar.scrolled .nav-item .buyer {
+        background-color: #009f35;
+        color: white;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        transition: all 1s ease;
+    }
+
+
+ 
+body.dark-mode .navbar {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+}
+
+    body.dark-mode .navbar.scrolled {
+        background-color: #222126;  
+        color: #e0e0e0;
+        transition: background-color 1s ease, color 1s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+
+        body.dark-mode .navbar.scrolled .nav-item .sell {
+            background-color: #00559f;
+            color: white;
+        }
+
+        body.dark-mode .navbar.scrolled .nav-item .buyer {
+            background-color: #009f35;
+            color: white;
+        }
+
+
+/* Custom Card Styles */
+.custom-card {
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: transform 1s ease, box-shadow 1s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+    .custom-card:hover {
+        border: none;
+        border-radius: 0px;
+        transform: scale(1.02);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        transition: transform 1s ease, box-shadow 1s ease;
+    }
+
+body.dark-mode .custom-card:hover {
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease, box-shadow 1s ease;
+}
+
+.car-img:hover {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.car-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.seller-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+    transition: background-color 1s ease, color 1s ease, border 1s ease;
+    border: none;
+}
+
+body.dark-mode .card-body {
+    background-color: #222126;
+    color: #e0e0e0;
+    transition: background-color 1s ease, color 1s ease, border 1s ease;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #00487e;
+    transition: all 1s ease;
+}
+
+body.dark-mode .card-title {
+    color: #35a8ff;
+    transition: all 1s ease;
+}
+
+.carprice {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #008000;
+    transition: color 1s ease;
+}
+
+body.dark-mode .carprice {
+    font-weight: bold;
+    font-size: 15px;
+    color: #00ff00;
+    transition: color 1s ease;
+}
+
+
+.message-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color: black;
+    transition: all 1s;
+}
+
+
+
+body.dark-mode .message-icon {
+    color: #fff;
+    transition: all 1s;
+}
+
+/* Align city, country and icons in the same line */
+.seller-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seller-details {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.custom-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust this height as per your requirement */
+    overflow: hidden;
+}
+
+.banner-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    object-position: center; /* Centers the image in the container */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Smooth fade-in effect */
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Subtle shadow to make text pop */
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-btn {
+    background-color: #f7c02b;
+    color: black;
+    padding: 12px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+    .banner-btn:hover {
+        background-color: #e0a31c;
+    }
+
+
+
+
+
+
+
+
+
+
+.homeheadings {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 37px;
+    font-weight: 37px;
+    color: #ededed;
+    text-shadow: 0px 0px 10px black , 0px 0px 10px black , 0px 0px 10px black , 0px 0px 90px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Basic styling for the brand logo section */
+.brand-logos {
+    width: 100%;
+    overflow: hidden;
+    /*background-color: #e43d3d;*/
+    background-color: #dddddd;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    transition: all 1s ease;
+}
+
+body.dark-mode .brand-logos {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+}
+
+/* Container for the logos */
+.logo-container {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+/* Styling for each logo */
+.brand-logo {
+    width: 100px;
+    height: 80px;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+    margin: 0 50px;
+    filter: drop-shadow(15px 15px 5px black);
+}
+
+/* Keyframes for the infinite scrolling animation */
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start at the initial position */
+    }
+
+    100% {
+        transform: translateX(-50%); /* Move by 50% of the container to the left */
+    }
+}
+
+
+
+
+
+
+/* About Section Styling */
+/* About Section Styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: transparent;
+    overflow: hidden; /* Ensure nothing overflows outside */
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    align-items: center;
+    position: relative;
+}
+
+/* Left Side: Car Image */
+.car-static {
+    width: 50%;
+    position: relative;
+    overflow: hidden; /* Hide overflow for the image */
+}
+
+.car {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    left: 10%; /* Position the car to be partially off-screen */
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+/* Right Side: About Text */
+.about-text {
+    width: 50%;
+    padding-left: 30px;
+}
+
+    .about-text h2 {
+        font-size: 2.5em;
+        color: #ff4d4d; /* Red color for the heading */
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+        .about-text h2 .highlight {
+            color: #ff0000; /* Bright red for "Vehicle World" */
+        }
+
+    .about-text p {
+        font-size: 1.2em;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px; /* Add margin below paragraph */
+    }
+
+   body.dark-mode .about-text p {
+        color: #dededed9;
+    }
+
+.strong-highlight {
+    color: #ff0000; /* Bright red for "Vehicle World" */
+}
+
+/* Contact Us Button */
+.contact-btn {
+    background: linear-gradient(180deg, rgba(215,35,35,1) 0%, rgba(255,53,53,1) 49%, rgba(177,27,27,1) 50%, rgba(212,30,30,1) 52%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+body.dark-mode .contact-btn {
+
+    color: white;
+
+}
+
+
+/* Optional: Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-static {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    height: 410px;
+    overflow: hidden;
+    /*box-shadow: 0 0.1px 3px rgba(0, 0, 0, 0.3);*/
+    /*background: #f2f2f2;*/
+    transition: all 1s;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0px;
+    padding-top: 30px;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0px;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.featurecard {
+    background-color: #fff;
+    border: none;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Custom arrow styles */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-prev:disabled, .carousel-next:disabled {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .carousel-slide {
+        padding: 10px;
+    }
+
+    .card-img-top {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        padding: 8px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+
+    .carousel-container {
+        padding: 15px;
+    }
+
+    .carousel-next, .carousel-prev {
+        font-size: 24px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-container {
+        padding: 10px;
+    }
+
+    .carousel-next, .carousel-prev {
+        padding: 8px;
+        font-size: 20px;
+    }
+
+    .card-img-top {
+        height: 130px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+}

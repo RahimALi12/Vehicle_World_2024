@@ -1,0 +1,442 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Vehicle_World.Models
+@inject SignInManager<AppUser> SignInManager
+@inject UserManager<AppUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="~/web/assets/img/logo.png">
+
+    <title>@ViewBag.Title</title>
+
+  
+
+    <!-- External CSS libraries -->
+
+
+
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-evstqn3/azprg1anm3qdgpjlim9nao0yz1ztcqtwfspd3yd65vohhpuucomlasjc" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+
+
+
+    <!-- Custom Stylesheet -->
+
+
+
+
+
+    <link type="text/css" rel="stylesheet" href="~/css/darkmode.css">
+    <link rel="stylesheet" href="~/web/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="~/web/assets/css/skins/default.css">
+    <link type="text/css" rel="stylesheet" href="~/web/assets/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="~/web/assets/css/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" href="~/web/assets/css/jquery.selectBox.css">
+    <link type="text/css" rel="stylesheet" href="~/web/assets/css/rangeslider.css">
+    <link type="text/css" rel="stylesheet" href="~/web/assets/css/animate.min.css">
+
+
+
+
+
+
+    <!-- Icons Links -->
+
+
+
+   
+    <link rel="stylesheet" href="~/dashboard/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/web/assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="~/web/assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/web/assets/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+
+
+
+
+    <!-- Google fonts -->
+
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7COswald:200,300,400,500,600%7CRoboto:100,300,400,400i,500,700">
+
+
+
+
+
+
+  
+    <!-- SignalR library -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/6.0.32/signalr.min.js"></script>
+
+
+
+
+
+
+    <!-- Script -->
+
+
+
+    <script defer src="~/web/assets/js/script.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    </head>
+<body >
+
+
+
+
+ 
+
+    <!-- main header start -->
+
+    <nav class="navbar navbar-expand-lg fw-bold fixed-top px-4 px-lg-5 py-3 py-lg-0">
+        <div class="d-flex align-items-center">
+            <!-- Logo and Vehicle World -->
+            <a asp-action="Index" asp-controller="Website" class="navbar-brand p-0 m-1 d-flex align-items-center">
+                <img src="~/web/assets/img/logo.png" class="img-circle rounded-circle elevation-1" alt="Logo" width="60" height="60" id="logo">
+                <span class="ms-3">̷V̷ehicle W̷orld</span>
+            </a>
+        </div>
+
+        <!-- Toggler button for small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">
+                <!-- Centered Menu Items -->
+                <a asp-action="Index" asp-controller="Website" class="nav-item nav-link">Home</a>
+                <a asp-action="About" asp-controller="Website" class="nav-item nav-link">About Us</a>
+                <a asp-action="Contactus" asp-controller="Website" class="nav-item nav-link">Contact Us</a>
+                @* <a asp-action="AllCars" asp-controller="Website" class="nav-item nav-link">All Cars</a> *@
+
+                @if (User.IsInRole("Admin"))
+                {
+                    <a class="nav-link" asp-controller="Seller" asp-action="AdminView">Sellers Dashboard</a>
+                }
+                else if (User.IsInRole("Seller"))
+                {
+                    <a class="nav-link" asp-controller="Seller" asp-action="SellerView">Your Dashboard</a>
+                }
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Right side icons and profile -->
+        <div class="navbar-nav ms-auto d-flex align-items-center py-0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <button id="toggleDarkMode" class="btn btn-link p-0 me-3">
+                <div class="toggle-container">
+                    <i id="icon" class="fas fa-sun"></i> <!-- Default icon (Sun) -->
+                </div>
+            </button>
+
+
+
+
+
+
+
+
+            <!-- Profile dropdown -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                var userManager = Context.RequestServices.GetService<UserManager<AppUser>>();
+                var user = await UserManager.GetUserAsync(User);
+                var email = user?.Email;
+                var profilePicture = user?.ProfileImage ?? "/images/default-profile.png"; // Default image if none exists
+
+                <div class="nav-item dropdown mb-0">
+                    <a class="nav-link mt-1 pt-0 mb-0 pb-1" href="#" role="button" data-bs-toggle="dropdown">
+                        <img src="@profilePicture" width="30" class="rounded-circle h-25 elevation-2" alt="User Image">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right p-3 mt-2" style="width: 300px;">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="@profilePicture" width="50" class="rounded-circle h-25 elevation-2 mr-2" alt="User Image" height="50">
+                            <div>
+                                <div class="font-weight-bold">@user?.U_Name</div>
+                                <div class="text-muted">@email</div>
+                            </div>
+                        </div>
+
+                        <div class="text-center" style="font-size: 23px; font-weight: 600;"> Hi, @user?.U_Name!</div>
+                        <div class="dropdown-divider"></div>
+
+                        @if (User.IsInRole("Seller"))
+                        {
+                            <a class="dropdown-item ai-icon" id="manage" asp-action="SellerProfile" asp-controller="Seller" title="Manage">
+                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span class="ml-2">Profile</span>
+                            </a>
+                        }
+
+                        else if (User.IsInRole("Buyer"))
+                        {
+                            <a class="dropdown-item ai-icon" id="manage" asp-action="BuyerProfile" asp-controller="Buyer" title="Manage">
+                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                <span class="ml-2">Profile</span>
+                            </a>
+                        }
+
+                        <a id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Website", new { area = "" })" class="dropdown-item ai-icon">
+                            <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                            <span id="logout" type="submit" class="ml-2">Logout</span>
+                        </a>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn buyer" asp-area="Identity" asp-page="/Account/Register" asp-route-role="Buyer">Sign Up</a>
+                    </li>
+                    &nbsp
+                    <li class="nav-item">
+                        <a class="nav-link btn sell" asp-area="Identity" asp-page="/Account/Register" asp-route-role="Seller"><i class="fas fa-plus me-2 ms-0"></i><span class="me-2">Sell</span>​</a>
+                    </li>
+                </ul>
+            }
+        </div>
+    </nav>
+
+
+
+
+ <div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"en","native_language_names":true,"detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script> 
+
+
+
+
+
+ <!-- Back to top Start -->
+
+
+
+
+
+
+@*    <button type="button" class="btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fa fa-arrow-up"></i>
+  </button>  *@
+
+
+
+
+
+  <!-- Back to top End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Chatbot Start -->
+
+
+  <div class="chat-icon" id="chat-toggle-btn">
+        <i class="fas fa-comment-alt"></i> 
+    </div>
+    
+      <div class="chatbot-container">
+        <div class="chatbot-header">
+            <img src="~/web/assets/img/logo.png" alt="Chatbot Avatar" class="chatbot-avatar">
+            <span>Vehicle World AI </span>
+            <button id="close-btn" class="close-btn">&times;</button>
+        </div>
+        <div class="chatbot-body" id="chat-body">
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" id="user-input" class="chatbot-input" placeholder="Type your message...">
+            <button id="send-btn" class="send-btn">
+                <i class="fa fa-paper-plane" id="send-icon"></i>
+  <span id="send-text" style="display: none;">Update</span>
+            </button>
+        </div>
+    </div> 
+
+
+<!-- Chatbot End -->
+
+                   
+                        <!-- <form class="form-inline my-2 my-lg-0">
+                        <a href="#full-page-search" class="btn btn-2 my-2 my-sm-0">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form> -->
+                    <!-- <div class="toggle-btn">
+                        <input class="toggleBtn" type="checkbox" id="checkbox">
+                        <label for="checkbox" class="carof">
+                          <img id="toggleImage" src="~/web/assets/img/carof.png" alt="" width="30" height="30">
+                          <div class="powersign"></div>
+                        </label>
+                      </div> -->
+    <!-- main header end -->
+
+    <!-- Your scrollable content goes here -->
+  
+
+    <div class="wrapper">
+
+        <div class="content">
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+
+
+
+        </div>
+
+</div>
+
+        
+
+
+
+  <!-- Footer start -->
+        <footer class="no-translate container-fluid footer d-flex flex-wrap justify-content-between align-items-center py-0 my-0">
+            <p class="footer-text col-md-4 mb-0">&copy; 2024 Vehicle World, Inc</p>
+
+            <a href="/" class="footer-logo mx-auto d-flex align-items-center justify-content-center mb-3 mb-md-0">
+                <img src="~/web/assets/img/logo.png" class="footer-img" width="70" height="70" />
+            </a>
+
+            <ul class="footer-links nav col-md-4 justify-content-end">
+                <li class="nav-item"><a class="nav-link px-2" asp-area="" asp-controller="Website" asp-action="Index">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-2" asp-area="" asp-controller="Website" asp-action="About">About</a></li>
+                <li class="nav-item"><a class="nav-link px-2" asp-area="" asp-controller="Website" asp-action="Contact">Contact</a></li>
+                @* <li class="nav-item"><a class="nav-link px-2" asp-area="" asp-controller="Website" asp-action="Privacy">Privacy</a></li> *@
+            </ul>
+        </footer>
+
+
+
+
+<!-- External JS libraries -->
+@* <script src="~/web/assets/js/script.js"></script> *@
+
+
+
+    <!-- Include your custom chat.js file -->
+    <script src="~/js/darkmode-toggle.js"></script>
+    <script src="~/js/chat.js"></script>
+ <script src="~/web/assets/js/jquery-2.2.0.min.js"></script>
+ <script src="~/web/assets/js/popper.min.js"></script>
+ <script src="~/web/assets/js/bootstrap.min.js"></script> 
+@* <script src="~/web/assets/js/jquery.selectBox.js"></script> *@
+
+
+   @*  <script src="~/web/assets/js/rangeslider.js"></script>
+    <script src="~/web/assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/web/assets/js/jquery.filterizr.js"></script>
+    <script src="~/web/assets/js/wow.min.js"></script>
+    <script src="~/web/assets/js/backstretch.js"></script>
+    <script src="~/web/assets/js/jquery.countdown.js"></script>
+    <script src="~/web/assets/js/jquery.scrollup.js"></script>
+    <script src="~/web/assets/js/typed.min.js"></script>
+    <script src="~/web/assets/js/jquery.mb.YTPlayer.js"></script>
+    <script src="~/web/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0N5pbJN10Y1oYFRd0MJ_v2g8W2QT74JE"></script>
+    <script src="~/web/assets/js/ie-emulation-modes-warning.js"></script> *@
+
+
+
+
+
+@* <script  src="~/web/assets/js/app.js"></script> *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @RenderSection("Scripts", required: false)
+
+
+
+
+    <!-- jQuery (Required for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+ 
+   
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+﻿@model IEnumerable<Vehicle_World.Models.CarDetail>
+
+@{
+    ViewData["Title"] = "All Cars";
+}
+
+<div class="container-fluid" style="margin-top: 70px;">
+    <div class="row">
+        <!-- Sidebar for Filters -->
+        <div class="col-md-3">
+            <div class="bg-light p-4 rounded shadow-sm" style="box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);">
+                <h5 class="mb-4">Filter Cars</h5>
+
+                <form method="get" action="FilterCars">
+                    <!-- Make Type Filter -->
+                    <div class="form-group">
+                        <label for="makeType">Make Type</label>
+                        <select name="makeTypeId" class="form-control">
+                            <option value="">-- Select Make Type --</option>
+                            @foreach (var makeType in ViewBag.MakeTypes)
+                            {
+                                <option value="@makeType.Id">@makeType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Model Type Filter -->
+                    <div class="form-group">
+                        <label for="modelType">Model Type</label>
+                        <select name="modelTypeId" class="form-control">
+                            <option value="">-- Select Model Type --</option>
+                            @foreach (var modelType in ViewBag.ModelTypes)
+                            {
+                                <option value="@modelType.Id">@modelType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Body Type Filter -->
+                    <div class="form-group">
+                        <label for="bodyType">Body Type</label>
+                        <select name="bodyTypeId" class="form-control">
+                            <option value="">-- Select Body Type --</option>
+                            @foreach (var bodyType in ViewBag.BodyTypes)
+                            {
+                                <option value="@bodyType.Id">@bodyType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Engine Type Filter -->
+                    <div class="form-group">
+                        <label for="engineType">Engine Type</label>
+                        <select name="engineTypeId" class="form-control">
+                            <option value="">-- Select Engine Type --</option>
+                            @foreach (var engineType in ViewBag.EngineTypes)
+                            {
+                                <option value="@engineType.Id">@engineType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Fuel Type Filter -->
+                    <div class="form-group">
+                        <label for="fuelType">Fuel Type</label>
+                        <select name="fuelTypeId" class="form-control">
+                            <option value="">-- Select Fuel Type --</option>
+                            @foreach (var fuelType in ViewBag.FuelTypes)
+                            {
+                                <option value="@fuelType.Id">@fuelType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Transmission Type Filter -->
+                    <div class="form-group">
+                        <label for="transmissionType">Transmission Type</label>
+                        <select name="transmissionTypeId" class="form-control">
+                            <option value="">-- Select Transmission Type --</option>
+                            @foreach (var transmissionType in ViewBag.TransmissionTypes)
+                            {
+                                <option value="@transmissionType.Id">@transmissionType.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Price Range Filters -->
+                    <div class="form-group">
+                        <label for="minPrice">Min Price</label>
+                        <input type="number" name="minPrice" class="form-control" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maxPrice">Max Price</label>
+                        <input type="number" name="maxPrice" class="form-control" />
+                    </div>
+
+                    <!-- Boolean Features Filters -->
+                    <div class="form-group">
+                        <label>Features</label><br />
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="BlindspotMonitor" name="BlindspotMonitor">
+                            <label class="custom-control-label" for="BlindspotMonitor">Blindspot Monitor</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="BackupCamera" name="BackupCamera">
+                            <label class="custom-control-label" for="BackupCamera">Backup Camera</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Sunroof" name="Sunroof">
+                            <label class="custom-control-label" for="Sunroof">Sunroof</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="Heatedseats" name="Heatedseats">
+                            <label class="custom-control-label" for="Heatedseats">Heated Seats</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-primary btn-block">Apply Filters</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Car Listings -->
+        <div class="col-md-9">
+            <div class="row">
+                @foreach (var car in Model)
+                {
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="~/images/@car.Image" class="card-img-top" alt="Car Image" style="height: 200px; object-fit: cover;" />
+                            <div class="card-body text-center">
+                                <h5 class="card-title font-weight-bold">@car.ModelType.Name</h5>
+                                <p class="card-text">@car.Price.ToString("C")</p>
+                                <p class="card-text">Body Type: @car.BodyType.Name</p>
+                                <p class="card-text">Fuel Type: @car.FuelType.Name</p>
+                                <p class="card-text">Transmission: @car.TransmissionType.Name</p>
+
+                                <!-- List of features -->
+                                <ul class="list-unstyled">
+                                    @if (car.BlindspotMonitor) { <li><i class="fas fa-check-circle text-success"></i> Blindspot Monitor</li> }
+                                    @if (car.BackupCamera) { <li><i class="fas fa-check-circle text-success"></i> Backup Camera</li> }
+                                    @if (car.Sunroof) { <li><i class="fas fa-check-circle text-success"></i> Sunroof</li> }
+                                    @if (car.Heatedseats) { <li><i class="fas fa-check-circle text-success"></i> Heated Seats</li> }
+                                </ul>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="@Url.Action("Details", "Website", new { id = car.Id })" class="btn btn-outline-primary btn-sm">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+

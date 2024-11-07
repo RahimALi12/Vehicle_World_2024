@@ -1,0 +1,357 @@
+﻿@page "{role}"
+@model Vehicle_World.Areas.Identity.Pages.Account.RegisterModel
+
+@{
+    ViewData["Title"] = "Create Seller";
+}
+
+
+@{
+    Layout = "_AdminLayout";
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global styles */
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+            a:hover {
+                opacity: 0.9;
+            }
+
+        body {
+            /* background-color: #0d0d0d; */ /* Very dark background for body */
+            color: #fff;
+            font-family: 'Roboto', sans-serif; /* Modern, professional font */
+            margin: 0;
+            padding: 0;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center; /* Gradient car image */ */
+        }
+
+        .form-container {
+            /*   background-color: #0d0d0d; */
+            position: relative;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 415px;
+            margin: 50px auto;
+            margin-top: 170px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            /* background-color: rgba(30, 30, 30, 0.8); */ /* Dark grey with slight transparency */
+            background: transparent;
+            backdrop-filter: blur(7px); /* Apply blur effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            z-index: 1; /* Ensure form is above the video */
+        }
+
+            .form-container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                z-index: -1; /* Place behind the form */
+            }
+
+        .logo {
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px; /* Adjust as needed */
+        }
+
+        h2 {
+            text-align: center;
+            color: #f8f9fa; /* Light color for heading */
+            font-weight: 700; /* Bold heading */
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-field {
+            flex: 1;
+            min-width: calc(50% - 20px); /* Adjust for spacing */
+        }
+
+        .form-floating {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f8f9fa; /* Light color for labels */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid white;
+            /* box-shadow: 0px 10px 10px 0px black; */
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: transparent; /* Dark grey background for inputs */
+            color: #fff; /* White text in inputs */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkred; /* Light red */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+        }
+
+            button:hover {
+                background-color: darkred; /* Darker red on hover */
+                opacity: 0.9;
+            }
+
+        /* Autofill fix */
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px rgba(30, 30, 30, 0.9) inset;
+            -webkit-text-fill-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+
+
+        <a asp-action="Index" asp-controller="Website">
+            <img src="~/web/assets/img/logo4.png" alt="Logo" class="logo"> <!-- Replace with actual logo URL -->
+        </a>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data">
+                    <h2>Register YourSelf</h2>
+                    <br />
+                    <div asp-validation-summary="ModelOnly" style="color: red;"></div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.U_Name">Name</label>
+                                <input asp-for="Input.U_Name" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.U_Name" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Email" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Password"></label>
+                                <input asp-for="Input.Password" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Password" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.ConfirmPassword"></label>
+                                <input asp-for="Input.ConfirmPassword" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.ConfirmPassword" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Contact"></label>
+                                <input asp-for="Input.Contact" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Contact" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.City"></label>
+                                <input asp-for="Input.City" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.City" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Country"></label>
+                                <input asp-for="Input.Country" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Country" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.ProfilePicture"></label>
+                                <input asp-for="Input.ProfilePicture" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.ProfilePicture" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="registerSubmit" type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <div class="new-account mt-3">
+                    <p>Already have an account? <a class="text-red" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="row">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <h2>Create a new account.</h2>
+            <hr />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating">
+                <input asp-for="Input.U_Name" class="form-control" aria-required="true" />
+                <label asp-for="Input.U_Name"></label>
+                <span asp-validation-for="Input.U_Name" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" />
+                <label asp-for="Input.Email"></label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.Password"></label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating">
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.ConfirmPassword"></label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-floating">
+                <input asp-for="Input.Contact" class="form-control" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.Contact"></label>
+                <span asp-validation-for="Input.Contact" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating">
+                <input asp-for="Input.City" class="form-control" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.City"></label>
+                <span asp-validation-for="Input.City" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating">
+                <input asp-for="Input.Country" class="form-control" autocomplete="new-password" aria-required="true" />
+                <label asp-for="Input.Country"></label>
+                <span asp-validation-for="Input.Country" class="text-danger"></span>
+            </div>
+
+            <div class="form-floating">
+                <select asp-for="Input.Role" asp-items="@Model.Input.RoleList">
+                    <option>----Select Role----</option>
+                </select>
+                <label asp-for="Input.Country"></label>
+                <span asp-validation-for="Input.Country" class="text-danger"></span>
+            </div>
+
+
+            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to register.</h3>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins!)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>
+</div> *@
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

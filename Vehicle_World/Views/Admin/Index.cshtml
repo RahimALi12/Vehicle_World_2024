@@ -1,0 +1,377 @@
+﻿@model IEnumerable<AppUser>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<style>
+
+    /* Custom Card Styles */
+    .custom-card {
+        border: none;
+        border-radius: 5px;
+        background-color: #ffffff;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-card:hover {
+        transform: scale(1.02);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .car-img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .seller-img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .car-price {
+        font-weight: bold;
+        font-size: 18px;
+        color: #006bf5;
+    }
+
+    .car-details {
+        margin-top: 10px;
+    }
+
+    .car-detail-item {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .feature-badge {
+        background-color: #f0f0f0;
+        border-radius: 3px;
+        padding: 3px 8px;
+        font-size: 12px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+
+    .seller-info {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .seller-details {
+        margin-left: 10px;
+    }
+
+    .seller-city-country {
+        font-size: 14px;
+        color: #6c757d;
+    }
+
+    .delete-icon {
+        font-size: 1rem;
+        margin-left: auto;
+background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);
+        color: #fff; /* Red white for delete */
+        cursor: pointer;
+    }
+
+    .car-features {
+        margin-top: 10px;
+    }
+
+    .feature-title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+</style>
+
+
+<div class="content-wrapper">
+
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Dashboard v2</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard v2</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="content">
+        <div class="container-fluid">
+
+
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                     @*    <div class="card-header mt-5 align-middle">
+                            <h5>  <strong> SELLERS </strong></h5>
+                            <div class="card-tools">
+                                <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Seller" class="btn bg-success btn-sm"><i class="fa fa-plus"></i></a>
+
+                                <a asp-action="CreateSeller" asp-controller="Admin" class="btn btn-primary">Create New</a>
+                            </div>
+                        </div> *@
+
+                        <div class="card-header d-flex">
+                            <h4 class="mb-0"><strong>SELLERS</strong></h4>
+                            <div class="card-tools ml-auto">
+                                <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Seller" class="btn bg-success btn-sm">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body table-responsive p-0">
+                            <table class="table align-middle text-center text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>City</th>
+                                        <th>Country</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var seller in ViewBag.Sellers)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(seller.ProfileImage))
+                                                {
+                                                    <img src="@seller.ProfileImage" alt="Profile Image" class="elevation-2 mt-0 pt-0" width="37" height="37" />
+                                                }
+                                            </td>
+                                            <td>@seller.U_Name</td>
+                                            <td>@seller.Email</td>
+                                            <td>@seller.Contact</td>
+                                            <td>@seller.City</td>
+                                            <td>@seller.Country</td>
+                                            <td>
+                                                <a style="background: linear-gradient(180deg, rgba(217,142,0,1) 0%, rgba(255,138,12,1) 2%, rgba(255,165,48,1) 48%, rgba(244,158,0,1) 50%, rgba(226,132,0,1) 54%, rgba(241,133,0,1) 61%);" asp-action="EditSeller" asp-controller="Admin" asp-route-id="@seller.Id" class="btn btn-sm text-white"><i class="fa fa-pen"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(22,107,162,1) 0%, rgba(0,126,209,1) 2%, rgba(57,178,255,1) 48%, rgba(10,102,161,1) 50%, rgba(4,129,210,1) 54%, rgba(0,136,201,1) 61%);" asp-action="DetailsSeller" asp-controller="Admin" asp-route-id="@seller.Id" class="btn btn-sm btn-primary"><i class="fa fa-info-circle"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);" asp-action="Deleteseller" asp-controller="Admin" asp-route-id="@seller.Id" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <div class="row mt-5">
+        @foreach (var item in ViewBag.Cars)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                    <div class="position-relative">
+                        <img src="~/images/@item.Image" class="car-img" alt="Car Image" />
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h5 class="card-title mb-0">@item.ModelType.Name</h5>
+                            <h6 class="car-price mb-0">@item.Price.ToString("C")</h6>
+                        </div>
+
+                        <!-- Car Details -->
+                        <div class="car-details">
+                            <p class="car-detail-item"><strong>Year:</strong> @item.Year</p>
+                            <p class="car-detail-item"><strong>Body Type:</strong> @item.BodyType.Name</p>
+                            <p class="car-detail-item"><strong>Engine Type:</strong> @item.EngineType.Name</p>
+                            <p class="car-detail-item"><strong>Fuel Type:</strong> @item.FuelType.Name</p>
+                            <p class="car-detail-item"><strong>Transmission:</strong> @item.TransmissionType.Name</p>
+                                    <p class="car-detail-item">
+                                        <strong>Color:</strong><div style="width: 50px; height: 50px; background-color: @item.Color; border: none;"></div>
+                                    </p>
+                            <p class="car-detail-item"><strong>Mileage:</strong> @item.Mileage miles</p>
+                            <p class="car-detail-item"><strong>Seating Capacity:</strong> @item.SeatingCapacity</p>
+                        </div>
+
+                        <!-- Features Section -->
+                        <div class="car-features">
+                            <span class="feature-title">Features:</span><br />
+                            @if (item.BlindspotMonitor) { <span class="feature-badge">Blindspot Monitor</span> }
+                            @if (item.Adaptivecruisecontrol) { <span class="feature-badge">Adaptive Cruise Control</span> }
+                            @if (item.BackupCamera) { <span class="feature-badge">Backup Camera</span> }
+                            @if (item.ForwardCollisionwarning) { <span class="feature-badge">Forward Collision Warning</span> }
+                            @if (item.Heatedseats) { <span class="feature-badge">Heated Seats</span> }
+                            @if (item.Hillassist) { <span class="feature-badge">Hill Assist</span> }
+                            @if (item.Sunroof) { <span class="feature-badge">Sunroof</span> }
+                            @if (item.AutoPark) { <span class="feature-badge">Auto Park</span> }
+                            @if (item.Automaticemergencybraking) { <span class="feature-badge">Emergency Braking</span> }
+                            @if (item.Leatherseats) { <span class="feature-badge">Leather Seats</span> }
+                            @if (item.Remotestart) { <span class="feature-badge">Remote Start</span> }
+                            @if (item.Bluetooth) { <span class="feature-badge">Bluetooth</span> }
+                            <!-- Add more features as needed -->
+                        </div>
+
+                        <!-- Seller Info -->
+                        <div class="seller-info">
+                              @if (!string.IsNullOrEmpty(item.Seller.ProfileImage))
+                            {
+                                <img src="@item.Seller.ProfileImage" class="seller-img" alt="Seller Image" />
+                            }
+                            else
+                            {
+                                <img src="~/web/assets/img/avatar/avatar-2.jpg" class="seller-img" alt="Default Image" />
+                            }
+                            <div class="seller-details">
+                                <p class="mb-0"><strong>@item.Seller.U_Name</strong></p>
+                                <p class="seller-city-country mb-0">@item.Seller.City, @item.Seller.Country</p>
+                            </div>
+                            <a asp-action="DeleteCar"  asp-route-id="@item.Id" class="btn btn-danger delete-icon">
+                                    <i class="fa fa-trash"></i>
+                                </a><!-- Replace message icon with delete icon -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        @*    <div class="card-header mt-5 align-middle">
+                        <h5>  <strong> SELLERS </strong></h5>
+                        <div class="card-tools">
+                        <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Seller" class="btn bg-success btn-sm"><i class="fa fa-plus"></i></a>
+
+                        <a asp-action="CreateSeller" asp-controller="Admin" class="btn btn-primary">Create New</a>
+                        </div>
+                        </div> *@
+
+                        <div class="card-header d-flex">
+                            <h4 class="mb-0"><strong>BUYERS</strong></h4>
+                            <div class="card-tools ml-auto">
+                                <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Buyer" class="btn bg-success btn-sm">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body table-responsive p-0">
+                            <table class="table align-middle text-center text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>City</th>
+                                        <th>Country</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var buyers in ViewBag.Buyers)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(buyers.ProfileImage))
+                                                {
+                                                    <img src="@buyers.ProfileImage" alt="Profile Image" class="elevation-2 mt-0 pt-0" width="37" height="37" />
+                                                }
+                                            </td>
+                                            <td>@buyers.U_Name</td>
+                                            <td>@buyers.Email</td>
+                                            <td>@buyers.Contact</td>
+                                            <td>@buyers.City</td>
+                                            <td>@buyers.Country</td>
+                                            <td>
+                                                <a style="background: linear-gradient(180deg, rgba(217,142,0,1) 0%, rgba(255,138,12,1) 2%, rgba(255,165,48,1) 48%, rgba(244,158,0,1) 50%, rgba(226,132,0,1) 54%, rgba(241,133,0,1) 61%);" asp-action="EditSeller" asp-controller="Admin" asp-route-id="@buyers.Id" class="btn btn-sm text-white"><i class="fa fa-pen"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(22,107,162,1) 0%, rgba(0,126,209,1) 2%, rgba(57,178,255,1) 48%, rgba(10,102,161,1) 50%, rgba(4,129,210,1) 54%, rgba(0,136,201,1) 61%);" asp-action="DetailsSeller" asp-controller="Admin" asp-route-id="@buyers.Id" class="btn btn-sm btn-primary"><i class="fa fa-info-circle"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);" asp-action="Deleteseller" asp-controller="Admin" asp-route-id="@buyers.Id" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+        </div>
+    </section>
+
+</div>

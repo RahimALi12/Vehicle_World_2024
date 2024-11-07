@@ -1,0 +1,104 @@
+﻿@model AppUser
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<style>
+
+    /* glass effect background */
+    .card-header {
+        background: linear-gradient(180deg, rgba(31,80,135,1) 0%, rgba(34,88,148,1) 2%, rgba(51,122,203,1) 48%, rgba(30,80,138,1) 52%, rgba(26,64,107,1) 54%, rgba(31,80,135,1) 61%);
+        border-radius: 5px; /* rounded corners for a sleek look */
+        padding: 20px;
+        color: ghostwhite;
+    }
+
+    /* white line with shine effect */
+    /*     h3 {
+            position: relative;
+            height: 2px;
+            background: linear-gradient(to right, white, white);
+            box-shadow: 0 0 10px white;
+        }
+
+        .seller::before {
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 0;
+                width: 100%;
+                height: 12px;
+                background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+                opacity: 0.7;
+                filter: blur(2px);
+            } */
+
+</style>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card " style="margin-top: 70px;">
+                        <!-- Gradient Header -->
+                        <div class="card-header text-center align-middle">
+                            <h3 class="pt-1">
+                                <strong>Buyer Details</strong>
+                            </h3>
+                        </div>
+
+                        <div class="card-body pt-3 mt-5">
+                            <div class="row">
+                                <!-- Profile Image -->
+                                <div class="col-md-4 text-center">
+                                    <img src="@Model.ProfileImage" alt="Profile Picture" class="img-fluid img-circle elevation-2 mb-3" width="150" height="150" />
+                                </div>
+
+                                <!-- Seller Details Table -->
+                                <div class="col-md-8">
+                                    <table class="table table-bordered table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width: 30%;">Name</th>
+                                                <td>@Model.U_Name</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Email</th>
+                                                <td>@Model.Email</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Contact</th>
+                                                <td>@Model.Contact</td>
+                                            </tr>
+                                            <tr>
+                                                <th>City</th>
+                                                <td>@Model.City</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Country</th>
+                                                <td>@Model.Country</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer with Buttons -->
+                        <div class="card-footer d-flex justify-content-between">
+                            <a onclick="history.back()" class="btn btn-primary" style="background: linear-gradient(180deg, rgba(22,107,162,1) 0%, rgba(0,126,209,1) 2%, rgba(57,178,255,1) 48%, rgba(10,102,161,1) 50%, rgba(4,129,210,1) 54%, rgba(0,136,201,1) 61%);">
+                                <i class="fa fa-arrow-left"></i> Back to Buyer List
+                            </a>
+                            <a href="@Url.Action("DeleteBuyer", "Admin", new { id = Model.Id })" class="btn ml-auto btn-danger" style="background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);
+">
+                                <i class="fa fa-trash"></i> Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

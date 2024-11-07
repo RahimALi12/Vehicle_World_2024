@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Vehicle_World.Models.Contact>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<style>
+
+    /* glass effect background */
+    .card-header {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(233,233,233,1) 100%);
+        border-radius: 5px;
+        padding: 20px;
+        color: black;
+    }
+
+</style>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" style="margin-top: 100px;">
+                        @*    <div class="card-header mt-5 align-middle">
+                        <h5>  <strong> SELLERS </strong></h5>
+                        <div class="card-tools">
+                        <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Seller" class="btn bg-success btn-sm"><i class="fa fa-plus"></i></a>
+
+                        <a asp-action="CreateSeller" asp-controller="Admin" class="btn btn-primary">Create New</a>
+                        </div>
+                        </div> *@
+
+                        <div class="card-header d-flex text-center">
+                            <h4 class="mb-0 text-center"><strong>MESSAGES</strong></h4>
+                        </div>
+
+                        <div class="card-body table-responsive p-0">
+                            <table class="table align-middle text-center text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>Subject</th>
+                                        <th>Message</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var contact in Model)
+                                    {
+                                        <tr>
+                                            <td>@contact.Name</td>
+                                            <td>@contact.Email</td>
+                                            <td>@contact.ConNum</td>
+                                            <td>@contact.Subject</td>
+                                            <td>@contact.Message</td>
+                                        </tr>
+                                    
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

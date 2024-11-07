@@ -1,0 +1,91 @@
+﻿@model Vehicle_World.Models.AppUser
+
+@{
+    ViewData["Title"] = "Delete Seller";
+    Layout = "_AdminLayout"; // Assuming you are using an admin layout
+}
+
+<style>
+    /* Styling similar to Seller Details Page */
+    .card-header {
+        background: linear-gradient(180deg, rgba(15,124,217,1) 0%, rgba(26,143,245,1) 48%, rgba(16,104,181,1) 52%, rgba(18,95,161,1) 100%);
+        border-radius: 5px; /* rounded corners for a sleek look */
+        padding: 20px;
+        color: ghostwhite;
+    }
+
+    .card-body {
+        padding-top: 20px;
+    }
+
+    .btn-danger {
+        background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);
+        margin-left: 43.5rem;
+    }
+
+    .btn-secondary {
+        background: linear-gradient(180deg, rgba(80,80,80,1) 0%, rgba(120,120,120,1) 48%, rgba(100,100,100,1) 52%, rgba(90,90,90,1) 100%);
+    }
+</style>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card pt-2" style="margin-top: 70px;">
+                        <!-- Gradient Header -->
+                        <div class="card-header text-center align-middle">
+                            <h3 class="text-light">
+                                <strong>
+                                    Are you sure you want to delete this seller?
+                                </strong>
+                            </h3>
+                        </div>
+
+                        <!-- Seller Information -->
+                        <div class="card-body">
+                            <div class="row">
+                                <!-- Profile Image -->
+                                <div class="col-md-4 text-center">
+                                    <img src="@Model.ProfileImage" alt="Profile Picture" class="img-fluid img-circle elevation-2 mb-3" width="150" height="150" />
+                                </div>
+
+                                <!-- Seller Details Table -->
+                                <div class="col-md-8">
+                                    <hr />
+                                    <dl class="row">
+                                        <dt class="col-sm-3">Name</dt>
+                                        <dd class="col-sm-9">@Model.U_Name</dd>
+
+                                        <dt class="col-sm-3">Email</dt>
+                                        <dd class="col-sm-9">@Model.Email</dd>
+
+                                        <dt class="col-sm-3">City</dt>
+                                        <dd class="col-sm-9">@Model.City</dd>
+
+                                        <dt class="col-sm-3">Country</dt>
+                                        <dd class="col-sm-9">@Model.Country</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Footer with Delete and Cancel Buttons -->
+                        <div class="card-footer d-flex justify-content-between">
+                            <a onclick="history.back()" class="btn btn-secondary">
+                                <i class="fa fa-arrow-left"></i> Cancel
+                            </a>
+                            <form asp-action="DeleteSeller" method="post">
+                                <input type="hidden" asp-for="Id" />
+                                <button type="submit" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i> Delete
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

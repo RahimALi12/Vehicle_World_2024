@@ -1,0 +1,23 @@
+﻿@model IEnumerable<CarDetail>
+
+<h2>Pending Car Approvals</h2>
+
+@foreach (var car in Model)
+{
+    <div>
+        <h4>@car.ModelType</h4>
+        <p>Body Type: @car.BodyType</p>
+        <p>Fuel Type: @car.FuelType</p>
+        <p>Added on: @car.CreatedDate.ToString("dd MMM yyyy")</p>
+
+        <form asp-action="ApproveCar" method="post">
+            <input type="hidden" name="carId" value="@car.Id" />
+            <button type="submit">Approve</button>
+        </form>
+
+        <form asp-action="RejectCar" method="post">
+            <input type="hidden" name="carId" value="@car.Id" />
+            <button type="submit">Reject</button>
+        </form>
+    </div>
+}

@@ -1,0 +1,63 @@
+﻿
+@{
+    var receiverId = ViewBag.ReceiverId;
+}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="chat-box" class="chat-box">
+    <!-- Messages will appear here -->
+</div>
+
+<div class="chat-input">
+    <input type="text" id="messageInput" placeholder="Type your message..." class="form-control" />
+    <button id="sendMessageButton" class="btn btn-primary">Send</button>
+</div>
+
+<script>
+    var receiverId = '@receiverId';  // Set this to the correct receiver's ID
+    var interval = 3000;  // Poll every 3 seconds
+
+    function loadMessages() {
+        $.ajax({
+            url: '@Url.Action("GetMessages", "Chat")',
+            type: 'GET',
+            data: { receiverId: receiverId },
+            success: function (messages) {
+                $('#chat-box').empty();
+                messages.forEach(function (message) {
+                    var messageHtml = '<div><b>' + message.senderId + '</b>: ' + message.message + '</div>';
+                    $('#chat-box').append(messageHtml);
+                });
+            }
+        });
+    }
+
+    // Send message
+    $('#sendMessageButton').click(function () {
+        var message = $('#messageInput').val();
+        if (message.trim() === '') return;
+
+        $.ajax({
+            url: '@Url.Action("SendMessage", "Chat")',
+            type: 'POST',
+            data: { receiverId: receiverId, message: message },
+            success: function () {
+                $('#messageInput').val('');  // Clear the input box
+                loadMessages();  // Reload the messages after sending
+            }
+        });
+    });
+
+    // Automatically load new messages every 3 seconds
+    setInterval(loadMessages, interval);
+    loadMessages();  // Initial load
+</script>

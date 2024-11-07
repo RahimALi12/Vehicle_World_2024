@@ -1,0 +1,439 @@
+﻿@model IEnumerable<Vehicle_World.Models.CarDetail>
+
+@{
+    ViewData["Title"] = "My Cars";
+}
+
+<style>
+    body {
+        background-color: #f8f9fa; /* Light grey background for the whole page */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex: 1;
+    }
+
+    .card {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+        height: 200px; /* Fixed height for images */
+        object-fit: cover; /* Ensure the image covers the area without distortion */
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .card-body {
+        padding: 20px;
+        transition: all 1s;
+    }
+
+    body.dark-mode .card-body{
+        background: #1f1f22;
+        transition: all 1s;
+
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+
+    body.dark-mode .card-title {
+        color: whitesmoke;
+        transition: all 1s;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+
+    body.dark-mode .card-text {
+    
+        color: whitesmoke;
+        transition: all 1s;
+    
+    }
+
+        body.dark-mode .card-text .list-unstyled li {
+    
+        color: whitesmoke;
+        transition: all 1s;
+    
+    }
+
+
+    .btn {
+        display: inline-block;
+        margin: 0 2px; /* Reduce margin between icons */
+        font-size: 0.9rem;
+    }
+
+    body.dark-mode .btn {
+
+        color: white;
+
+    }
+
+
+    .icons {
+        justify-content: center;
+    }
+
+    .no-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 70px); /* Adjust height based on your navbar height */
+        text-align: center;
+        margin-top: 50px;
+    }
+
+        .no-items h2 {
+            font-size: 1.5rem;
+            color: #6c757d;
+        }
+
+        .no-items p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+    .add-car-icon {
+        font-size: 3rem;
+margin-top: -19px;
+        color: black;
+        cursor: pointer;
+    }
+
+
+
+    .centered-bidding-form {
+        position: absolute; /* Changed from fixed to absolute */
+        top: 50%; /* Positioning relative to its parent */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the modal */
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        display: none; /* Hidden by default */
+        justify-content: center;
+        align-items: center;
+        z-index: 999; /* Make sure it appears on top */
+        width: 100%;
+        height: 100%;
+    }
+
+    .bidding-form-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        width: 400px;
+        max-width: 100%;
+    }
+
+
+</style>
+
+<div class="container mt-5">
+
+    @if (Model == null || !Model.Any())
+    {
+
+        <div class="no-items">
+            <h2>No Items</h2>
+                        @if (User.IsInRole("Seller"))
+                        {
+            <p>You haven't uploaded any cars yet.</p>
+            <a asp-action="AddCar" asp-controller="Seller" asp-route-role="Seller" class="add-car-icon">
+                <i class="fa fa-plus-square text-dark"></i>
+            </a>
+}
+else if (User.IsInRole("Admin"))
+
+                        {
+
+    <p>This Seller haven't uploaded any cars yet.</p>
+
+}
+
+        </div>
+    }
+else if (User.IsInRole("Admin")){
+<h1 class="text-center" style="margin-top: 100px;">Seller Cars</h1>
+}
+    else
+    {
+        <h1 class="text-center" style="margin-top: 100px;">My Cars</h1>
+        <a asp-action="AddCar" asp-controller="Seller" class="add-car-icon">
+            <i class="fa fa-plus-square text-dark ms-auto"></i>
+        </a>
+        <div class="row mt-5">
+            @foreach (var car in Model)
+            {
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+
+  @if (car.IsFeatured)
+                        {
+                            <div class="ribbon">
+                                <div class="wrap">
+                                    <span class="ribbon6">Featured</span>
+                                </div>
+                            </div>
+                        }
+
+                        <img src="~/images/@car.Image" asp-append-version="true" class="card-img-top img-fluid" alt="image" />
+                        <div class="card-body">
+                            <h5 class="card-title">@(car.MakeType != null ? car.MakeType.Name : "N/A") @(car.ModelType != null ? car.ModelType.Name : "N/A") (@car.Year)</h5>
+                            <p class="card-text">
+                                <strong>Body Type:</strong> @car.BodyType.Name<br>
+                                <strong>Engine Type:</strong> @car.EngineType.Name<br>
+                                <strong>Fuel Type:</strong> @car.FuelType.Name<br>
+                                <strong>Transmission Type:</strong> @car.TransmissionType.Name<br>
+                                <strong>Mileage:</strong> @car.Mileage km/l<br>
+                                <strong>Seating Capacity:</strong> @car.SeatingCapacity<br>
+                                <strong>Price:</strong> $@car.Price<br>
+                                <strong>Condition:</strong>@(car.ConditionType != null ? car.ConditionType.Name : "N/A")<br>
+                                <strong>Color:</strong><div style="width: 50px; height: 50px; background-color: @car.Color; border: none;"></div>
+                                <br>
+                             
+                            </p>
+
+                            <p class="card-text">
+                                <strong>Features:</strong>
+                                <ul class="list-unstyled">
+                                    @if (car.BlindspotMonitor)
+                                    {
+                                        <li><i class="fa fa-check"></i> Blind spot Monitor</li>
+                                    }
+                                    @if (car.Adaptivecruisecontrol)
+                                    {
+                                        <li><i class="fa fa-check"></i> Adaptive cruise control</li>
+                                    }
+                                    @if (car.BackupCamera)
+                                    {
+                                        <li><i class="fa fa-check"></i> Backup Camera</li>
+                                    }
+                                    @if (car.ForwardCollisionwarning)
+                                    {
+                                        <li><i class="fa fa-check"></i> Forward Collision warning</li>
+                                    }
+                                    @if (car.Heatedseats)
+                                    {
+                                        <li><i class="fa fa-check"></i> Heated seats</li>
+                                    }
+                                    @if (car.Hillassist)
+                                    {
+                                        <li><i class="fa fa-check"></i> Hill assist</li>
+                                    }
+                                    @if (car.Sunroof)
+                                    {
+                                        <li><i class="fa fa-check"></i> Sun roof</li>
+                                    }
+                                    @if (car.AutoPark)
+                                    {
+                                        <li><i class="fa fa-check"></i> Auto Park</li>
+                                    }
+                                    @if (car.Automaticemergencybraking)
+                                    {
+                                        <li><i class="fa fa-check"></i> Automatic emergency braking</li>
+                                    }
+                                    @if (car.EvasiveSteering)
+                                    {
+                                        <li><i class="fa fa-check"></i> Evasive Steering</li>
+                                    }
+                                    @if (car.Leatherseats)
+                                    {
+                                        <li><i class="fa fa-check"></i> Leather seats</li>
+                                    }
+                                    @if (car.Remotestart)
+                                    {
+                                        <li><i class="fa fa-check"></i> Remote start</li>
+                                    }
+                                    @if (car.USBoutlets)
+                                    {
+                                        <li><i class="fa fa-check"></i> USB outlets</li>
+                                    }
+                                    @if (car.Drivercommunicationassistance)
+                                    {
+                                        <li><i class="fa fa-check"></i> Driver communication assistance</li>
+                                    }
+                                    @if (car.AirConditioning)
+                                    {
+                                        <li><i class="fa fa-check"></i> Air Conditioning</li>
+                                    }
+                                    @if (car.Battery)
+                                    {
+                                        <li><i class="fa fa-check"></i> Battery</li>
+                                    }
+                                    @if (car.Bluetooth)
+                                    {
+                                        <li><i class="fa fa-check"></i> Bluetooth</li>
+                                    }
+                                    
+                                </ul>
+                            </p>
+            
+
+
+
+
+                            <div class="d-flex icons">
+  <!-- Dynamic button based on car feature status -->
+<div>
+                            @if (car.IsFeatured)
+                            {
+                                <!-- Button for removing from featured -->
+                                <form asp-action="RemoveFeatureCar" asp-controller="Seller" method="post">
+                                    <input type="hidden" name="carId" value="@car.Id" />
+                                    <button type="submit" class="btn btn-danger">Remove Featured</button>
+                                </form>
+                            }
+                            else if (car.FeatureRequestPending)
+                            {
+                                <!-- Show pending if request is pending -->
+                                <span class="badge badge-warning p-2 m-1 mt-2" disabled>Pending</span>
+                            }
+                            else
+                            {
+                                <!-- Button to request feature -->
+                                <form asp-action="RequestFeatureCar" asp-controller="Seller" method="post">
+                                    <input type="hidden" name="carId" value="@car.Id" />
+                                    <button type="submit" class="btn btn-primary">Feature Request</button>
+                                </form>
+                            }
+
+
+</div>
+
+
+                                @if (car.IsBiddingEnabled)
+                                {
+                                    <!-- Button for removing from featured -->
+                                    <form asp-action="RemoveBiddingCar" asp-controller="Seller" method="post">
+                                        <input type="hidden" name="carId" value="@car.Id" />
+                                        <button type="submit" class="btn btn-danger">Remove Bidding</button>
+                                    </form>
+                                }
+                                else if (car.BiddingRequestPending)
+                                {
+                                    <!-- Show pending if request is pending -->
+                                    <span class="badge badge-warning p-2 m-1 mt-2" disabled>Pending</span>
+                                }
+                                else
+                                {
+                                    <!-- Button to request feature -->
+                                   
+                                        
+                                         
+     <!-- Request Bidding Button -->
+        <button id="requestBiddingButton_@car.Id" class="btn btn-primary" onclick="showBiddingForm(@car.Id, @car.Price)">
+            Request Bidding
+        </button>
+
+        <!-- Bidding Form (hidden by default) -->
+        <div id="biddingFormContainer_@car.Id" class="centered-bidding-form" style="display:none;">
+            <div class="bidding-form-content">
+                <h5>Set Minimum Bidding Amount</h5>
+                <form id="biddingForm_@car.Id" method="post" action="/Seller/RequestBidding" onsubmit="return validateBidAmount(@car.Id)">
+                    <div class="form-group">
+                        <input type="number" step="0.01" class="form-control" id="minimumBidAmount_@car.Id" name="MinimumBidAmount" placeholder="Enter amount" required />
+                        <input type="hidden" id="carPrice_@car.Id" value="@car.Price" />
+                        <input type="hidden" name="CarId" value="@car.Id" />
+                        <small id="error-message_@car.Id" style="color: red; display: none;">The minimum bid amount cannot be greater than the car's price!</small>
+                    </div>
+                                                <strong>Note : </strong> <p style="font-size: 13px;"> You can set a bidding price up to 50% of your car's total value (i.e., half of your car's price). If you attempt to enter an amount higher than this, the system will automatically adjust the minimum bid to 50% of your car's price.</p>
+                    <button type="submit" class="btn btn-success">Submit Request</button>
+                    <button type="button" class="btn btn-danger" onclick="hideBiddingForm(@car.Id)">Cancel</button>
+                </form>
+            </div>
+        </div>
+  
+
+<script>
+    // Show the bidding form for a specific car
+    function showBiddingForm(carId, carPrice) {
+        var biddingFormContainer = document.getElementById('biddingFormContainer_' + carId);
+        biddingFormContainer.style.display = 'flex'; // Display as flex to center
+        // Remove the restriction of setting minimum bid as half of the car price
+        document.getElementById('minimumBidAmount_' + carId).setAttribute('placeholder', 'Enter your amount');
+    }
+
+    // Hide the bidding form for a specific car
+    function hideBiddingForm(carId) {
+        var biddingFormContainer = document.getElementById('biddingFormContainer_' + carId);
+        biddingFormContainer.style.display = 'none';
+    }
+
+    // Validate minimum bid amount for a specific car
+    function validateBidAmount(carId) {
+        var carPrice = parseFloat(document.getElementById('carPrice_' + carId).value);
+        var minimumBidAmount = parseFloat(document.getElementById('minimumBidAmount_' + carId).value);
+
+        // If minimum bid is greater than car price, show error message and stop form submission
+        if (minimumBidAmount > carPrice) {
+            document.getElementById('error-message_' + carId).style.display = 'block';
+            return false; // Prevent form submission
+        }
+
+        // Hide error message if everything is fine
+        document.getElementById('error-message_' + carId).style.display = 'none';
+        return true; // Allow form submission
+    }
+</script>
+
+
+
+                                }
+                               
+
+
+
+
+<div class="ms-auto">
+                                <a asp-action="DeleteCar" asp-route-id="@car.Id" class="btn btn-danger">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    }
+
+</div>
+
+
+
+<script>
+    function validateBidAmount() {
+        // Get the entered amount and maximum allowed amount
+        var enteredAmount = parseFloat(document.getElementById('minimumBidAmount').value);
+        var maxAllowedAmount = parseFloat(document.getElementById('maxAllowedBidAmount').value);
+
+        if (enteredAmount > maxAllowedAmount) {
+            alert("The minimum bid amount cannot exceed $" + maxAllowedAmount.toFixed(2));
+        } else {
+            // If valid, submit the form
+            document.getElementById('biddingForm').submit();
+        }
+    }
+</script>

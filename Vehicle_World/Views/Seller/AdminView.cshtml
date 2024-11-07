@@ -1,0 +1,120 @@
+﻿@model IEnumerable<Vehicle_World.Models.AppUser>
+
+    @{
+        ViewData["Title"] = "Sellers";
+    }
+
+
+<style>
+
+body.dark-mode .card-text{
+
+
+color: purple;
+
+
+}
+
+</style>
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">All Sellers</h1>
+        <div class="row">
+            @foreach (var sellers in Model)
+            {
+                <div class="col-lg-4 col-md-6">
+                    <div class="card seller-card mb-4">
+                        <div class="card-img-wrapper">
+                            <img src="@sellers.ProfileImage" class="card-img-top" alt="@sellers.UserName" />
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">@sellers.UserName</h5>
+                            <p class="card-text">
+                                <strong>Email:</strong> @sellers.Email<br>
+                                <strong>City:</strong> @sellers.City<br>
+                                <strong>Country:</strong> @sellers.Country<br>
+                            </p>
+                            <a asp-action="SellerView" asp-route-id="@sellers.Id" class="btn btn-primary">
+                                <i class="fa fa-dashboard"></i> View Dashboard
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <style>
+        /* General Container Styling */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Card Styling */
+        .seller-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #ffffff;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+            .seller-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            }
+
+        /* Image Styling */
+        .card-img-wrapper {
+            height: 250px; /* Increased height for a more prominent image */
+            overflow: hidden;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .seller-card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        /* Card Body Styling */
+        .card-body {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #343a40;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+            line-height: 1.5;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+    </style>

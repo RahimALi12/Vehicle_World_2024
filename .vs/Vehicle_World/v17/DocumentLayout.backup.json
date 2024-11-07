@@ -1,0 +1,1239 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Rahim\\Vehicle_World\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\web\\assets\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\web\\assets\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\css\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\css\\darkmode.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\css\\darkmode.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\web\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\web\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\allcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\allcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\contactus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\seller\\sellerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\seller\\sellerview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\website\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\website\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\controllers\\websitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\controllers\\websitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\allfeaturedcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\allfeaturedcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\chatmessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\chatmessages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\fueltype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\reviewbidcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\reviewbidcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\reviewfeaturedcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\reviewfeaturedcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\allbiddingcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\allbiddingcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\deletecar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\deletecar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\allcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\allcars.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\seller\\addcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\seller\\addcar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\controllers\\sellercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\cardetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\cardetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\allcarsrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\allcarsrequest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927011129_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240927011129_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010927_asfasf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240927010927_asfasf.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010531_afa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240927010531_afa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010224_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240927010224_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\sellerindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\sellerindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\editbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\editbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240924124042_contactchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Migrations\\20240924124042_contactchanges.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\js\\darkmode-toggle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\js\\darkmode-toggle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\adminregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\adminregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\adminregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\adminregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\js\\translate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\js\\translate.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\contactmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\contactmessages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\buyer\\buyerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\buyer\\buyerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\controllers\\buyercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\controllers\\buyercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\seller\\adminview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\seller\\adminview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\buyerindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\buyerindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\deletebuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\deletebuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\detailsbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\detailsbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\createbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\createbuyer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\deleteseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\deleteseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\detailsseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\detailsseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\useradminregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\useradminregister.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\editseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\editseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\admin\\createseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\admin\\createseller.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Chat\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Views\\Chat\\Index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Models\\Chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\EditCar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Vehicle_World\\Views\\Seller\\EditCar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|d:\\rahim\\vehicle_world\\vehicle_world\\migrations\\20240927150014_chatters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1B2D016-FE05-4F3A-957A-BAFE64FF8CDB}|Vehicle_World\\Vehicle_World.csproj|solutionrelative:vehicle_world\\migrations\\20240927150014_chatters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 24,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T15:31:28.98Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\About.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\About.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\About.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\About.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T15:09:35.701Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAAAG4BAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-11T10:25:41.394Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\web\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\web\\assets\\css\\style.css",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\web\\assets\\css\\style.css",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\web\\assets\\css\\style.css",
+              "ViewState": "AgIAAOECAAAAAAAAAAAAACEDAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-12T12:20:50.434Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "darkmode.css",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\css\\darkmode.css",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\css\\darkmode.css",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\css\\darkmode.css",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\css\\darkmode.css",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-16T05:57:57.127Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "script.js",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\web\\assets\\js\\script.js",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\web\\assets\\js\\script.js",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\web\\assets\\js\\script.js",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\web\\assets\\js\\script.js",
+              "ViewState": "AgIAAPwBAAAAAAAAAAAAAAECAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-19T18:54:52.237Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "darkmode-toggle.js",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\darkmode-toggle.js",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\js\\darkmode-toggle.js",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\darkmode-toggle.js",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\js\\darkmode-toggle.js",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-24T09:22:56.237Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Contactus.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Contactus.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\Contactus.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Contactus.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\Contactus.cshtml",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAAAI0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T06:19:44.664Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Index.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\Index.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Index.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\Index.cshtml",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAGoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T09:47:47.39Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "home.css",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\css\\home.css",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\css\\home.css",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\css\\home.css",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\css\\home.css",
+              "ViewState": "AgIAAGEBAAAAAAAAAAAcwHEBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-25T05:47:55.068Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebsiteController.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\WebsiteController.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Controllers\\WebsiteController.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\WebsiteController.cs",
+              "RelativeToolTip": "Vehicle_World\\Controllers\\WebsiteController.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAwFYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T07:31:20.484Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Details.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\Details.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Details.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\Details.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T01:43:43.792Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Vehicle_World\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAADgv4QAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T21:50:46.56Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReviewFeaturedCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ReviewFeaturedCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\ReviewFeaturedCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ReviewFeaturedCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\ReviewFeaturedCars.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T15:56:24.915Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SellerController.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\SellerController.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Controllers\\SellerController.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\SellerController.cs",
+              "RelativeToolTip": "Vehicle_World\\Controllers\\SellerController.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAcwBgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T19:37:31.267Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AddCar.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\AddCar.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Seller\\AddCar.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\AddCar.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Seller\\AddCar.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAtwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T05:52:06.347Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\Profile.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\Profile.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\Profile.cshtml",
+              "ViewState": "AgIAAIwAAAAAAAAAAADwv6QAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T23:06:18.509Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\Feedback.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Feedback.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:31:41.613Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FuelType.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\FuelType.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\FuelType.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\FuelType.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\FuelType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:34:20.375Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20240927010927_asfasf.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010927_asfasf.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927010927_asfasf.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010927_asfasf.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927010927_asfasf.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:09:28.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20240927150014_chatters.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927150014_chatters.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927150014_chatters.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927150014_chatters.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927150014_chatters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T15:00:15.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SellerView.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\SellerView.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Seller\\SellerView.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\SellerView.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Seller\\SellerView.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAuwN0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-03T05:06:52.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatMessages.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ChatMessages.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\ChatMessages.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ChatMessages.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\ChatMessages.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T13:17:25.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AllCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\AllCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\AllCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\AllCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\AllCars.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T00:56:59.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-02T11:05:59.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20240927011129_initial.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927011129_initial.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927011129_initial.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927011129_initial.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927011129_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:11:30.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AllCarsRequest.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllCarsRequest.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\AllCarsRequest.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllCarsRequest.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\AllCarsRequest.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T04:22:47.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DBInitializer.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Data\\DBInitializer.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Data\\DBInitializer.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Data\\DBInitializer.cs",
+              "RelativeToolTip": "Vehicle_World\\Data\\DBInitializer.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T04:26:35.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ReviewBidCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ReviewBidCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\ReviewBidCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ReviewBidCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\ReviewBidCars.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T04:54:39.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Chat.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Chat.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Website\\Chat.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Website\\Chat.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Website\\Chat.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-27T14:52:57.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20240927010531_afa.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010531_afa.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927010531_afa.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010531_afa.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927010531_afa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:05:31.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20240927010224_initial.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010224_initial.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927010224_initial.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927010224_initial.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927010224_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T01:02:25.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20240927002916_asgadhfjhss.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240927002916_asgadhfjhss.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T00:29:16.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20240926234738_feedbackchanges.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240926234738_feedbackchanges.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T23:47:39.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AllBiddingCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllBiddingCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\AllBiddingCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllBiddingCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\AllBiddingCars.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-26T13:38:08.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAABQBAAAAAAAAAAAUwBoBAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-24T16:35:11.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20240924124042_contactchanges.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240924124042_contactchanges.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Migrations\\20240924124042_contactchanges.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Migrations\\20240924124042_contactchanges.cs",
+              "RelativeToolTip": "Vehicle_World\\Migrations\\20240924124042_contactchanges.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T12:40:43.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CarDetail.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\CarDetail.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\CarDetail.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\CarDetail.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\CarDetail.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAcwC8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T14:52:15.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AllFeaturedCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllFeaturedCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\AllFeaturedCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllFeaturedCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\AllFeaturedCars.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-25T13:17:13.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\Contact.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Contact.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\Contact.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T11:24:27.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "AdminRegister.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml",
+              "ViewState": "AgIAAO4AAAAAAAAAAAAmwPgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-03T10:12:22.011Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\EmailService.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\EmailService.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\EmailService.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\EmailService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:21:30.277Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Program.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Program.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Program.cs",
+              "RelativeToolTip": "Vehicle_World\\Program.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGwAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T07:39:36.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AllCars.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllCars.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\AllCars.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\AllCars.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\AllCars.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAIoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-23T23:14:05.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DeleteCar.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteCar.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\DeleteCar.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteCar.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\DeleteCar.cshtml",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAADYAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-24T00:18:56.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EditBuyer.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\EditBuyer.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\EditBuyer.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\EditBuyer.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\EditBuyer.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:42:31.863Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "AdminRegister.cshtml.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml.cs",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AdminRegister.cshtml.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAtwLoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:03:57.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAABkBAAAAAAAAAAAuwCABAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T22:24:33.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "translate.js",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\translate.js",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\js\\translate.js",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\translate.js",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\js\\translate.js",
+              "ViewState": "AgIAACcBAAAAAAAAAAAkwDABAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-21T14:15:23.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ContactMessages.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ContactMessages.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\ContactMessages.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\ContactMessages.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\ContactMessages.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T06:46:49.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "BuyerProfile.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Buyer\\BuyerProfile.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Buyer\\BuyerProfile.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Buyer\\BuyerProfile.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Buyer\\BuyerProfile.cshtml",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswJkAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-16T05:52:11.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "BuyerController.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\BuyerController.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Controllers\\BuyerController.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Controllers\\BuyerController.cs",
+              "RelativeToolTip": "Vehicle_World\\Controllers\\BuyerController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T05:50:03.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Chat\\Index.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Chat\\Index.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Chat\\Index.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Chat\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-15T23:42:34.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "chat.js",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\chat.js",
+              "RelativeDocumentMoniker": "Vehicle_World\\wwwroot\\js\\chat.js",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\wwwroot\\js\\chat.js",
+              "RelativeToolTip": "Vehicle_World\\wwwroot\\js\\chat.js",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAACgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-15T23:23:14.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Chat.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\Chat.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\Chat.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\Chat.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T22:19:39.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "AdminView.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\AdminView.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Seller\\AdminView.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\AdminView.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Seller\\AdminView.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T11:06:42.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "BuyerIndex.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\BuyerIndex.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\BuyerIndex.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\BuyerIndex.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\BuyerIndex.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:58:59.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAANkAAAAAAAAAAAAYwOcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-31T14:02:29.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "DeleteBuyer.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteBuyer.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\DeleteBuyer.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteBuyer.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\DeleteBuyer.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAIBZwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:56:46.209Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "DetailsBuyer.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DetailsBuyer.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\DetailsBuyer.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DetailsBuyer.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\DetailsBuyer.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAIBZwFoAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:38:58.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CreateBuyer.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\CreateBuyer.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\CreateBuyer.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\CreateBuyer.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\CreateBuyer.cshtml",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T07:07:21.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "DeleteSeller.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteSeller.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\DeleteSeller.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DeleteSeller.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\DeleteSeller.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T14:27:28.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SellerIndex.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\SellerIndex.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\SellerIndex.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\SellerIndex.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\SellerIndex.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T11:13:04.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "DetailsSeller.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DetailsSeller.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\DetailsSeller.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\DetailsSeller.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\DetailsSeller.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T10:51:15.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "UserAdminRegister.cshtml.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\UserAdminRegister.cshtml.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\UserAdminRegister.cshtml.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\UserAdminRegister.cshtml.cs",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\UserAdminRegister.cshtml.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAtwAABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T23:02:35.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "EditSeller.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\EditSeller.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\EditSeller.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\EditSeller.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\EditSeller.cshtml",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAcwKIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T22:52:26.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "CreateSeller.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\CreateSeller.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Admin\\CreateSeller.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Admin\\CreateSeller.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Admin\\CreateSeller.cshtml",
+              "ViewState": "AQIAAEoBAAAAAAAAAAAiwGUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T21:15:03.13Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T07:00:19.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "EditCar.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\EditCar.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Seller\\EditCar.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Seller\\EditCar.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Seller\\EditCar.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAgwDYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-05T19:55:32.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-03T05:53:25.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Vehicle_World\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Vehicle_World\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-28T19:43:37.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Vehicle_World\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAwHMAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-28T16:08:41.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\AppUser.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\AppUser.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\AppUser.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\AppUser.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T16:01:38.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\appsettings.json",
+              "RelativeDocumentMoniker": "Vehicle_World\\appsettings.json",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\appsettings.json",
+              "RelativeToolTip": "Vehicle_World\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-27T15:39:30.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Vehicle_World\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Rahim\\Vehicle_World\\Vehicle_World\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Vehicle_World\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAqwCQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T15:14:47.913Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Log in";
+}
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Global styles */
+        a {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.9;
+        }
+
+        body {
+            /* background-color: #0d0d0d; */ /* Very dark background for body */
+            color: #fff;
+            font-family: 'Roboto', sans-serif; /* Modern, professional font */
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center; /* Gradient car image */ */
+        }
+
+        .form-container {
+            /*             background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center; /* Gradient car image */
+            /* */ background-color: #0d0d0d;
+            */ position: relative;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 307px;
+            margin: 50px auto;
+            margin-top: 110px;
+            background: transparent;
+            backdrop-filter: blur(15px); /* Apply blur effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+           /*  background-color: rgba(30, 30, 30, 0.8); */ /* Dark grey with slight transparency */
+            z-index: 1; /* Ensure form is above the video */
+        }
+
+            .form-container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                z-index: -1; /* Place behind the form */
+            }
+
+        .logo {
+            position: absolute;
+            top: -60px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px; /* Adjust as needed */
+        }
+
+        h2 {
+            text-align: center;
+            color: #f8f9fa; /* Light color for heading */
+            font-weight: 700; /* Bold heading */
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-field {
+            flex: 1;
+            min-width: calc(50% - 20px); /* Adjust for spacing */
+        }
+
+        .form-floating {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f8f9fa; /* Light color for labels */
+        } 
+
+        .input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid white;
+            /* box-shadow: 0px 10px 10px 0px black; */
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: transparent; /* Dark grey background for inputs */
+            color: #fff; /* White text in inputs */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkred; /* Light red */
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+        }
+
+            button:hover {
+                background-color: darkred; /* Darker red on hover */
+                opacity: 0.9;
+            }
+
+        /* Autofill fix */
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px rgba(30, 30, 30, 0.9) inset;
+            -webkit-text-fill-color: #fff;
+        }
+
+        /* Adjust checkbox */
+       /*    .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        } */
+
+        /* Hide the video element, but keep it as a background */
+        /*    .video-background {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+                    opacity: 0.5;
+                } */
+    </style>
+</head>
+
+
+<body>
+    <div class="form-container">
+        <a asp-action="Index" asp-controller="Website">
+        <img src="~/web/assets/img/logo4.png" alt="Logo" class="logo"> <!-- Replace with actual logo URL -->
+        </a>
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="account" method="post" enctype="multipart/form-data">
+                <h2>Login Your Account</h2>
+                <br />
+                <div asp-validation-summary="ModelOnly" style="color: red;"></div>
+                <div class="form-floating">
+                        <label asp-for="Input.Email" class="form-label label"></label>
+                        <input asp-for="Input.Email" class="form-control input" autocomplete="username" aria-required="true" />
+                        <span asp-validation-for="Input.Email" style="color: red;"></span>
+                </div>
+                <div class="form-floating">
+                        <label asp-for="Input.Password" class="form-label label"></label>
+                        <input asp-for="Input.Password" class="form-control input" autocomplete="current-password" aria-required="true" />
+                        <span asp-validation-for="Input.Password" style="color: red;"></span>
+                </div>
+                        <div class="checkbox">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            <label asp-for="Input.RememberMe" class="form-label">@Html.DisplayNameFor(m => m.Input.RememberMe)</label>
+                        </div>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
+                <div>
+                 @*    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p> *@
+                    <p>
+                            Don't have an account? <br><br/> <a asp-area="Identity" asp-page="/Account/Register" asp-route-role="Buyer">Register as Buyer</a>
+                          &nbsp  OR &nbsp <a asp-area="Identity" asp-page="/Account/Register" asp-route-role="Seller">Register as Seller</a>
+                        </p>
+                           
+                   @*  <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p> *@
+                </div>
+            </form>
+      
+         
+                      
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,363 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<AppUser> UserManager
+
+
+@{
+    Layout = "_Layout";
+}
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+<link type="text/css" rel="stylesheet" href="~/css/darkmode.css">
+<link type="text/css" rel="stylesheet" href="~/css/home.css">
+
+
+
+
+</head>
+
+
+
+
+
+<!-- Banner Start -->
+<div class="custom-banner">
+    <div class="banner-slide">
+        <img src="https://img.freepik.com/premium-photo/luxury-car-dark-background-generative-ai_446633-154503.jpg?ga=GA1.1.239283807.1724464901&semt=ais_hybrid" class="banner-image" alt="First Banner">
+        <div class="banner-text">
+            <h1 class="banner-title">Luxury Redefined</h1>
+            <p class="banner-subtitle">Experience comfort and performance with our exclusive collection of cars.</p>
+            <a href="#" class="banner-btn">Shop Now</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Banner End -->
+
+<br><br><br>
+
+<h2 class="text-center my-4 homeheadings">Featured Cars</h2>
+
+<div class="carousel-container">
+    <div class="carousel-slider">
+        <div class="carousel-slides">
+            @foreach (var car in ViewBag.FeaturedCars)
+            {
+                <div class="carousel-slide">
+                    <div class="card featurecard">
+                        <img src="~/images/@car.Image" class="card-img-top" alt="Car Image" />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">@car.MakeType.Name @car.ModelType.Name</h5>
+                            <p class="card-text"><strong>Price: $@car.Price</strong></p>
+                            <a href="@Url.Action("Details", "Website", new { id = car.Id })" class="btn btn-primary sliderbtn">View Details</a>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let currentIndex = 0; // Track the current slide
+    const slides = document.querySelector('.carousel-slides');
+    const slideCount = slides.children.length;
+    const slidesToShow = 4; // Show 4 cars at a time
+    const slideWidth = document.querySelector('.carousel-container').clientWidth / slidesToShow;
+
+    // Set initial styles
+    slides.style.transform = `translateX(${currentIndex * -slideWidth}px)`;
+    document.querySelectorAll('.carousel-slide').forEach(slide => {
+        slide.style.width = `${slideWidth}px`; // Set each slide width to 1/4th of the container
+    });
+
+    function moveSlide(step) {
+        currentIndex += step;
+
+        // Prevent sliding beyond the limits
+        if (currentIndex < 0) {
+            currentIndex = 0; // Stop at the first slide
+        } else if (currentIndex > slideCount - slidesToShow) {
+            currentIndex = slideCount - slidesToShow; // Stop at the last visible slide
+        }
+
+        slides.style.transition = 'transform 0.5s ease';
+        slides.style.transform = `translateX(${currentIndex * -slideWidth}px)`;
+
+        // Update button states (optional if you want to disable them)
+        document.querySelector('.carousel-next').disabled = currentIndex >= slideCount - slidesToShow;
+        document.querySelector('.carousel-prev').disabled = currentIndex === 0;
+    }
+
+    // Initial button state
+    document.querySelector('.carousel-next').disabled = slideCount <= slidesToShow;
+    document.querySelector('.carousel-prev').disabled = true;
+</script>
+
+<br>
+<br>
+<br>
+<br>
+
+<h2 class="text-center homeheadings">About Us</h2>
+
+<section class="about-section">
+    <div class="about-container">
+        <!-- Left Side: Static Car Image -->
+        <div class="car-static">
+            <img src="~/web/assets/img/banner/aboutcar.png" alt="Car Image" class="car">
+        </div>
+
+        <!-- Right Side: About Text -->
+        <div class="about-text">
+            @* <h2> <span class="highlight">Vehicle World</span></h2> *@
+            <p>
+                Welcome to <strong class="strong-highlight">Vehicle World</strong>, At Vehicle World, we believe in redefining the car buying experience. With a commitment to quality, reliability, and customer satisfaction, we offer a vast selection of vehicles to suit every need. Whether you're looking for luxury, performance, or economy, we have something for everyone.
+            </p>
+            <a asp-action="Contactus"><button class="contact-btn">Contact Us</button></a>
+     
+        </div>
+    </div>
+</section>
+
+
+
+<h2 class="text-center my-4 homeheadings">Top Brands</h2>
+
+
+<br><br><br>
+
+<div class="brand-logos">
+    <div class="logo-container">
+        <img src="~/web/assets/img/brand/brand-1.png" alt="Brand 1" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-2.png" alt="Brand 2" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-3.png" alt="Brand 3" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-4.png" alt="Brand 4" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-5.png" alt="Brand 5" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-6.png" alt="Brand 6" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-7.png" alt="Brand 7" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-8.png" alt="Brand 8" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-9.png" alt="Brand 9" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-10.png" alt="Brand 10" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-11.png" alt="Brand 11" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-12.png" alt="Brand 12" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-13.png" alt="Brand 13" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-14.png" alt="Brand 14" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-15.png" alt="Brand 15" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-16.png" alt="Brand 16" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-17.png" alt="Brand 17" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-19.png" alt="Brand 19" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-20.png" alt="Brand 20" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-21.png" alt="Brand 21" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-22.png" alt="Brand 22" class="brand-logo">
+        <!-- Add more brand logos as needed -->
+          <img src="~/web/assets/img/brand/brand-1.png" alt="Brand 1" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-2.png" alt="Brand 2" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-3.png" alt="Brand 3" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-4.png" alt="Brand 4" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-5.png" alt="Brand 5" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-6.png" alt="Brand 6" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-7.png" alt="Brand 7" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-8.png" alt="Brand 8" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-9.png" alt="Brand 9" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-10.png" alt="Brand 10" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-11.png" alt="Brand 11" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-12.png" alt="Brand 12" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-13.png" alt="Brand 13" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-14.png" alt="Brand 14" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-15.png" alt="Brand 15" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-16.png" alt="Brand 16" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-17.png" alt="Brand 17" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-19.png" alt="Brand 19" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-20.png" alt="Brand 20" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-21.png" alt="Brand 21" class="brand-logo">
+        <img src="~/web/assets/img/brand/brand-22.png" alt="Brand 22" class="brand-logo">
+    </div>
+</div>
+
+
+
+
+<br><br><br>
+
+
+<h2 class="text-center my-4 homeheadings">All Cars</h2>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in ViewBag.Cars)
+        {
+
+           
+
+            <div class="col-md-4 mb-4">
+                <div class="card custom-card">
+                    <div class="position-relative">
+                        @* <p>Added on: @item.CreatedDate.ToString("dd MMM yyyy")</p> *@
+                        @if (item.IsFeatured)
+                        {
+                            <div class="ribbon">
+                                <div class="wrap">
+                                    <span class="ribbon6">Featured</span>
+                                </div>
+                            </div>
+                        }
+                        <img src="~/images/@item.Image" class="car-img" alt="Car Image" />
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <a href="@Url.Action("Details", "Website", new { id = item.Id })"><h5 class="card-title mb-0">@item.ModelType.Name</h5></a>
+
+                          
+                            <h6 class="carprice mb-0" id="carPrice">@item.Price.ToString("C")</h6>
+
+                           @*  <select id="currencySelector">
+                                <option value="PKR">PKR (Pakistani Rupee)</option>
+                                <option value="INR">INR (Indian Rupee)</option>
+                                <option value="MYR">MYR (Malaysian Ringgit)</option>
+                                <option value="EUR">EUR (Euro)</option>
+                                <option value="GBP">GBP (British Pound)</option>
+                                <!-- Add more currencies if needed -->
+                            </select> *@
+                        </div>
+
+                        <!-- Seller Info -->
+                        <div class="d-flex align-items-center">
+                            @if (!string.IsNullOrEmpty(item.Seller.ProfileImage))
+                            {
+                                <img src="@item.Seller.ProfileImage" class="seller-img" alt="Seller Image" />
+                            }
+                            else
+                            {
+                                <img src="~/web/assets/img/avatar/avatar-2.jpg" class="seller-img" alt="Default Image" />
+                            }
+                            <p class="mx-2 fw-bold mb-0"><strong>@item.Seller.U_Name</strong></p>
+                        </div>
+
+                        <!-- City, Country, and Icons in the same line -->
+                        <div class="seller-info">
+                            <div class="seller-details">
+                                <p class="mx-2 text-muted mb-0">@item.Seller.City, @item.Seller.Country</p>
+                            </div>
+                 <div class="icons">
+     <a href="mailto:@item.Seller.Email?subject=Inquiry about your car&body=Hi, I'm interested in your car. Could you please provide more details?">
+        <i class="far fa-comment-alt message-icon"></i>
+    </a> 
+
+<!-- <a href="/Chat/Index?sellerId=@item.Seller.Id">
+    <i class="far fa-comment-alt message-icon"></i>
+</a> -->
+
+@* <a href="/Chat/Index?sellerId=@item.Seller.Id">
+<img src="https://img.icons8.com/?size=100&id=16027&format=png&color=000000" width="30" height="30">
+</a> *@
+
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+
+
+<script>
+    // Fetch exchange rates when the page loads or currency is selected
+    document.addEventListener('DOMContentLoaded', function () {
+        const apiKey = '4ef26ac6346ddb772f2daae0';  // Use your API key from ExchangeRate-API or any other
+        const apiUrl = `https://v6.exchangerate-api.com/v6/4ef26ac6346ddb772f2daae0/latest/USD`;
+        let exchangeRates = {};
+
+        // Fetch exchange rates from the API
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                exchangeRates = data.conversion_rates;
+            })
+            .catch(error => console.error('Error fetching exchange rates:', error));
+
+        const currencySelector = document.getElementById('currencySelector');
+        const carPriceElement = document.getElementById('carPrice');
+        const originalPrice = parseFloat(carPriceElement.innerText);  // Assuming price is in USD
+
+        // Convert currency when a new currency is selected
+        currencySelector.addEventListener('change', function () {
+            const selectedCurrency = currencySelector.value;
+
+            if (exchangeRates[selectedCurrency]) {
+                const convertedPrice = originalPrice * exchangeRates[selectedCurrency];
+                carPriceElement.innerText = convertedPrice.toFixed(2) + ' ' + selectedCurrency;
+            } else {
+                alert('Currency not available.');
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+function openContactForm(sellerEmail, sellerName) {
+    document.getElementById('contactModal').style.display = 'block';
+    document.getElementById('sellerEmail').value = sellerEmail;
+    document.getElementById('sellerName').value = sellerName;
+}
+
+function closeContactForm() {
+    document.getElementById('contactModal').style.display = 'none';
+}
+
+
+</script>
+
+
+
+ 
+
+<script>
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Navbar Scroll Effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 150) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
+   
+});
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

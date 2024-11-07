@@ -1,0 +1,274 @@
+html.dark-mode {
+    background-color: #151618;
+    /*scrollbar-color: #f1f1f1 transparent;*/
+    transition: background-color 1s ease, color 1s ease;
+}
+
+
+
+/* General Dark Mode Styles */
+body.dark-mode {
+    background-color: #151618; /* Dark background */
+    /*background-color: #1C1B20;*/ /* Dark background */
+    color: #e0e0e0; /* Light gray text for readability */
+    transition: background-color 1s ease, color 1s ease;
+}
+
+
+    body.dark-mode .navbar {
+        background-color: #222126;
+        color: #e0e0e0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333333; /* Slightly lighter dark color for navbar */
+        color: #e0e0e0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        transition: background-color 1s ease, color 1s ease;
+    }
+
+        body.dark-mode .navbar .nav-link,
+        body.dark-mode .navbar .navbar-brand {
+            color: #f1f1f1; /* Light text on dark navbar */
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+            body.dark-mode .navbar .nav-link:hover {
+                color: #B22222; /* Accent color for hover state */
+                transition: background-color 1s ease, color 1s ease;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body.dark-mode #gt_float_wrapper .gt_options {
+        background-color: darkslategrey !important;
+        transition: all 1s;
+        color: white !important;
+        transition: background-color 1s ease, color 1s ease;
+    }
+    body.dark-mode .gt_float_switcher .gt_options.gt-open {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: all 1s;
+    }
+    body.dark-mode .gt_float_switcher {
+        font-family: Arial;
+        font-size: 15px;
+        border-radius: 2px;
+        margin-bottom: 50px !important;
+        margin-left: -15px !important;
+        display: inline-block;
+        line-height: 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px;
+        background: #222126;
+        overflow: hidden;
+        transition: all 1s;
+        transition: all .5s cubic-bezier(0.4, 0, 1, 1);
+        transition: background-color 1s ease, color 1s ease;
+    }
+
+
+
+
+        body.dark-mode .gt_float_switcher .gt_options {
+            position: relative;
+            z-index: 777;
+            max-height: 250px;
+            overflow-y: auto;
+            transform: translateY(-30px);
+            cursor: pointer;
+            transition: all .8s;
+            transition: all .8s cubic-bezier(.3,1.1,.4,1.1);
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+
+
+        body.dark-mode .gt_float_switcher .gt-selected {
+            position: relative;
+            z-index: 888;
+            background-color: #222126;
+            cursor: pointer;
+            text-transform: uppercase;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.1);
+            text-align: left;
+        transition: all 1s;
+        transition: background-color 1s ease, color 1s ease, border 1s ease;
+        }
+
+
+
+
+    body.dark-mode #gt_float_wrapper .gt-lang-code {
+        transition: all 1s;
+        color: #e0e0e0 !important;
+        transition: background-color 1s ease, color 1s ease;
+    }
+
+    body.dark-mode #gt_float_wrapper .gt_options {
+        background-color: transparent !important;
+        color: lightgreen !important;
+        transition: background-color 1s ease, color 1s ease;
+        transition: all 1s;
+        }
+
+
+    body.dark-mode .gt_float_switcher .gt-selected .gt-current-lang {
+        padding: 6px 15px;
+        color: #333;
+        background-color: transparent !important;
+        font-weight: bold;
+        transition: all 1s;
+    }
+
+
+
+
+
+        body.dark-mode .gt_float_switcher img {
+        vertical-align: middle;
+        display: inline-block;
+        width: 23px;
+        height: auto;
+        margin: 0 5px 0 0;
+        border-radius: 3px;
+        transition: all 1s;
+        }
+
+
+    body.dark-mode .gt_float_switcher .gt_options a {
+        display: block;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #444;
+        color: gray;
+        transition: color .4s linear;
+    }
+
+        body.dark-mode .gt_float_switcher .gt_options a:hover {
+            /*background-color: #e21b1b !important;*/
+            background: linear-gradient(180deg, rgba(215,35,35,1) 0%, rgba(255,53,53,1) 49%, rgba(177,27,27,1) 50%, rgba(212,30,30,1) 52%) !important;
+            color: white;
+        }
+
+
+
+
+
+
+        /*   body.dark-mode ::-webkit-scrollbar {
+        width: 10px;
+        background-color: transparent;
+    }
+
+    body.dark-mode ::-webkit-scrollbar-thumb {
+        background-color: #e21b1b;
+    }*/
+
+
+
+
+    body.dark-mode #btn-back-to-top {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 10px;
+        color: ghostwhite;
+        position: fixed;
+        bottom: 90px;
+        /*background-color: #e21b1b;*/
+        background: linear-gradient(180deg, rgba(215,35,35,1) 0%, rgba(255,53,53,1) 49%, rgba(177,27,27,1) 50%, rgba(212,30,30,1) 52%);
+        border: none;
+        right: 13px;
+        transition: all 1s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+        body.dark-mode #btn-back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transition: all 1s;
+        }
+
+
+    body.dark-mode #btn-back-to-top:hover {
+        background-color: #8B0000; /* Darker shade on hover */
+    }
+
+
+
+   
+
+    /* Footer Dark Mode */
+    body.dark-mode .footer {
+        background-color: #222126; /* Footer background matching navbar */
+        color: #e0e0e0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        transition: background-color 1s ease, color 1s ease;
+    }
+
+        body.dark-mode .footer p {
+            color: #ffff; /* Accent color for hover state */
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+        body.dark-mode .footer .nav-link {
+            color: #ffff; /* Accent color for hover state */
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+            body.dark-mode .footer .nav-link:hover {
+                color: #ff4b4b; /* Accent color for hover state */
+                transition: background-color 1s ease, color 1s ease;
+            }
+
+    /* Button and Interactive Elements Dark Mode */
+    body.dark-mode button,
+    body.dark-mode a {
+        color: #bb86fc; /* Accent color for buttons and links */
+    }
+
+        body.dark-mode button:hover,
+        body.dark-mode a:hover {
+            color: #e0e0e0; /* Reverse color on hover for buttons/links */
+        }
+
+    /* Sidebar Dark Mode */
+    body.dark-mode .sidebar {
+        background-color: #1f1f1f;
+        color: #e0e0e0;
+    }
+
+    /* Borders and Divider Lines in Dark Mode */
+    body.dark-mode hr,
+    body.dark-mode .divider {
+        border-color: #303030; /* Subtle divider lines */
+    }
+
+
+
+

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<AppUser>
+
+@{
+    Layout = "_AdminLayout";
+}
+
+<style>
+
+    /* glass effect background */
+    .card-header {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(233,233,233,1) 100%);
+        border-radius: 5px;
+        padding: 20px;
+        color: black;
+    }
+
+</style>
+
+<div class="content-wrapper">
+    <section class="content">
+        <div class="container-fluid px-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card" style="margin-top: 100px;">
+                        @*    <div class="card-header mt-5 align-middle">
+                        <h5>  <strong> SELLERS </strong></h5>
+                        <div class="card-tools">
+                        <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Seller" class="btn bg-success btn-sm"><i class="fa fa-plus"></i></a>
+
+                        <a asp-action="CreateSeller" asp-controller="Admin" class="btn btn-primary">Create New</a>
+                        </div>
+                        </div> *@
+
+                        <div class="card-header d-flex">
+                            <h4 class="mb-0"><strong>BUYERS</strong></h4>
+                            <div class="card-tools ml-auto">
+                                <a asp-area="Identity" asp-page="/Account/UserAdminRegister" asp-route-role="Buyer" class="btn bg-success btn-sm">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body table-responsive p-0">
+                            <table class="table align-middle text-center text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>City</th>
+                                        <th>Country</th>
+                                        <th>Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var user in Model)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @if (!string.IsNullOrEmpty(user.ProfileImage))
+                                                {
+                                                    <img src="@user.ProfileImage" alt="Profile Image" class="elevation-2 mt-0 pt-0" width="37" height="37" />
+                                                }
+                                            </td>
+                                            <td>@user.U_Name</td>
+                                            <td>@user.Email</td>
+                                            <td>@user.Contact</td>
+                                            <td>@user.City</td>
+                                            <td>@user.Country</td>
+                                            <td>
+                                                <a style="background: linear-gradient(180deg, rgba(217,142,0,1) 0%, rgba(255,138,12,1) 2%, rgba(255,165,48,1) 48%, rgba(244,158,0,1) 50%, rgba(226,132,0,1) 54%, rgba(241,133,0,1) 61%);" asp-action="EditBuyer" asp-controller="Admin" asp-route-id="@user.Id" class="btn btn-sm text-white"><i class="fa fa-pen"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(22,107,162,1) 0%, rgba(0,126,209,1) 2%, rgba(57,178,255,1) 48%, rgba(10,102,161,1) 50%, rgba(4,129,210,1) 54%, rgba(0,136,201,1) 61%);" asp-action="DetailsBuyer" asp-controller="Admin" asp-route-id="@user.Id" class="btn btn-sm btn-primary"><i class="fa fa-info-circle"></i></a>
+                                                <a style="background: linear-gradient(180deg, rgba(152,0,0,1) 0%, rgba(194,53,53,1) 2%, rgba(255,74,74,1) 48%, rgba(227,42,42,1) 52%, rgba(200,6,32,1) 54%, rgba(209,6,6,1) 61%);" asp-action="DeleteBuyer" asp-controller="Admin" asp-route-id="@user.Id" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

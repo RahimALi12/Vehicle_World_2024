@@ -1,0 +1,175 @@
+﻿@page "{role}"
+@model Vehicle_World.Areas.Identity.Pages.Account.UserAdminRegisterModel
+@{
+    ViewData["Title"] = "User Admin Register";
+    Layout = "_AdminLayout";
+}
+
+<style>
+  /*   body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+margin-left: 130px;
+    } */
+
+    .form-container {
+        width: 100%;
+        max-width: 600px;
+        padding: 40px;
+        margin-top: 70px;
+        margin-left: 450px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-top: 3px solid #007bff;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        color: #343a40;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .form-floating {
+        margin-bottom: 1.5rem;
+    }
+
+        .form-floating label {
+            color: #495057;
+            font-size: 14px;
+        }
+
+    .form-control {
+        height: 50px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        width: 100%;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 14px;
+    }
+
+    .new-account p {
+        color: #495057;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .new-account a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .new-account a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+</style>
+
+<div class="form-container">
+    <h2>
+        @Model.Role Register</h2>
+
+    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <label asp-for="Input.U_Name">Name</label>
+                    <input asp-for="Input.U_Name" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.U_Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <label asp-for="Input.Email">Email</label>
+                    <input asp-for="Input.Email" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+         
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <label asp-for="Input.Password">Password</label>
+                    <input asp-for="Input.Password" class="form-control" aria-required="true" type="password" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <label asp-for="Input.ConfirmPassword">Confirm Password</label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" aria-required="true" type="password" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+         
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <label asp-for="Input.Contact">Contact</label>
+                    <input asp-for="Input.Contact" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Contact" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <label asp-for="Input.City">City</label>
+                    <input asp-for="Input.City" class="form-control" aria-required="true" />       
+                    <span asp-validation-for="Input.City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-floating">
+                    <label asp-for="Input.Country">Country</label>
+                    <input asp-for="Input.Country" class="form-control" aria-required="true" />
+                    <span asp-validation-for="Input.Country" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="custom-file">
+                        <input asp-for="Input.ProfilePicture" type="file" class="custom-file-input" id="profilePictureInput" aria-required="true" />
+                        <label class="custom-file-label" for="profilePictureInput">Choose file</label>
+                    </div>
+                    <span asp-validation-for="Input.ProfilePicture" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <button id="registerSubmit" type="submit" class="btn btn-primary mt-4">Register</button>
+    </form>
+
+    <div class="new-account mt-3">
+        <p>Already have an account? <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a></p>
+    </div>
+</div>

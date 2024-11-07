@@ -1,0 +1,157 @@
+﻿@model Vehicle_World.Models.Contact
+
+<!-- Contact 3 start -->
+<div class="contact-3 content-area-7">
+    <div class="container mt-5 pt-5 my-5 py-5">
+        <div class="main-title text-center">
+            <h1 class="display-4 font-weight-bold animate__animated animate__fadeInDown">Get in Touch</h1>
+       </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <form asp-action="Contactus" method="post" enctype="multipart/form-data" class="p-4 shadow-lg rounded bg-white animate__animated animate__fadeIn">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group animate__animated animate__fadeInLeft">
+                                <label asp-for="Name" class="font-weight-bold">Name</label>
+                                <input asp-for="Name" class="form-control" placeholder="Enter your name" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group animate__animated animate__fadeInRight">
+                                <label asp-for="Email" class="font-weight-bold">Email</label>
+                                <input asp-for="Email" class="form-control" placeholder="Enter your email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group animate__animated animate__fadeInLeft">
+                                <label asp-for="ConNum" class="font-weight-bold">Contact Number</label>
+                                <input asp-for="ConNum" class="form-control" placeholder="Enter your contact number" />
+                                <span asp-validation-for="ConNum" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group animate__animated animate__fadeInRight">
+                                <label asp-for="Subject" class="font-weight-bold">Subject</label>
+                                <input asp-for="Subject" class="form-control" placeholder="Enter the subject" />
+                                <span asp-validation-for="Subject" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group animate__animated animate__fadeInUp">
+                                <label asp-for="Message" class="font-weight-bold">Message</label>
+                                <textarea asp-for="Message" class="form-control" rows="6" placeholder="Write your message here"></textarea>
+                                <span asp-validation-for="Message" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <button type="submit" class="btn btn-primary btn-lg px-5 animate__animated animate__pulse animate__infinite">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact 3 end -->
+
+<!-- Custom CSS and Animations -->
+<style>
+    /* Form Container */
+    .contact-3 .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-3 .form-control {
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 1px solid #ced4da;
+        background-color: #f9f9f9;
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+    }
+
+    .contact-3 .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+        background-color: #fff;
+    }
+
+    /* Button Styling */
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        border-radius: 50px;
+        padding: 12px 30px;
+        transition: background-color 0.4s, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 123, 255, 0.3);
+    }
+
+    /* Add subtle hover effect to form elements */
+    .form-control:hover {
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Add animation delays for a smoother feel */
+    .animate__animated {
+        animation-duration: 1.2s;
+    }
+
+    .animate__fadeInDown {
+        animation-delay: 0.2s;
+    }
+
+    .animate__fadeInUp {
+        animation-delay: 0.4s;
+    }
+
+    .animate__fadeIn {
+        animation-delay: 0.6s;
+    }
+
+    .animate__fadeInLeft {
+        animation-delay: 0.4s;
+    }
+
+    .animate__fadeInRight {
+        animation-delay: 0.6s;
+    }
+
+    .animate__pulse {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+
+    /* Main title section styling */
+    .main-title h1 {
+        color: #343a40;
+        font-weight: bold;
+    }
+
+    .main-title p {
+        font-size: 1.2rem;
+        color: #6c757d;
+    }
+
+    /* Shadow and rounded corners for the form */
+    .shadow-lg {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Background colors */
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+
+    .bg-white {
+        background-color: #ffffff !important;
+    }
+</style>

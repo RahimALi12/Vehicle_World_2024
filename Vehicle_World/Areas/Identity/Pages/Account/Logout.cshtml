@@ -1,0 +1,107 @@
+﻿@page
+@model LogoutModel
+@{
+    ViewData["Title"] = "Log out";
+}
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff; /* White background for the card */
+            border-radius: 8px;
+            box-shadow: 0 1px 30px rgba(0,0,0,0.1);
+            padding: 3rem;
+            padding-top: 30px;
+            margin-top: -130px;
+            max-width: 500px;
+            width: 100%;
+            position: relative; /* For positioning buttons */
+        }
+
+        .btn-logout {
+            background-color: #dc3545; /* Red button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 75px;
+        }
+
+            .btn-logout:hover {
+                background-color: #c82333; /* Darker red on hover */
+            }
+
+        .btn-no {
+            background-color: #28a745; /* Green button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-left: -20px;
+        }
+
+            .btn-no:hover {
+                background-color: #218838; /* Darker green on hover */
+                color: white;
+                text-decoration: none;
+            }
+
+        .footer-buttons {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .message {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <h3 class="message">Do you really want to logout?</h3>
+        </header>
+        <br />
+        <div class="footer-buttons">
+            <a onclick="history.back()" class="btn-no ">Go Back</a>
+            @{
+                if (User.Identity?.IsAuthenticated ?? false)
+                {
+                    <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                        <button type="submit" class="btn-logout">Logout</button>
+                    </form>
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>

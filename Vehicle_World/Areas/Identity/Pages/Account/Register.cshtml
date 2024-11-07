@@ -1,0 +1,367 @@
+﻿@page "{role}"
+@model Vehicle_World.Areas.Identity.Pages.Account.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+
+@{
+    Layout = null;
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+       <style>
+        /* Global styles */
+        a{
+            color: skyblue;
+            text-decoration: none;
+        }
+
+            a:hover {
+                opacity: 0.9;
+            }
+
+        body {
+            /* background-color: #0d0d0d; */ /* Very dark background for body */
+            color: #fff;
+            font-family: 'Roboto', sans-serif; /* Modern, professional font */
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background: url('https://i.pinimg.com/474x/15/28/de/1528de30a4b5244ef20b25645b013158.jpg') no-repeat center center; /* Gradient car image */ */
+        }
+
+        .form-container {
+        /*   background-color: #0d0d0d; */ 
+            position: relative;
+            border-radius: 10px;
+            padding: 30px;
+            max-width: 415px;
+            max-height: 510px;
+            margin: 0 auto;
+            margin-top: 55px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+            /* background-color: rgba(30, 30, 30, 0.8); */ /* Dark grey with slight transparency */
+            background: transparent;
+            backdrop-filter: blur(7px); /* Apply blur effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            z-index: 1; /* Ensure form is above the video */
+        }
+
+            .form-container::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                z-index: -1; /* Place behind the form */
+            }
+
+
+.profile-picture-wrapper {
+    position: relative;
+    margin-top: -70px; /* Move the image upwards */
+    z-index: 1;
+}
+
+.image-preview {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 5px solid #fff; /* White border around the image */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.camera-icon {
+    position: absolute;
+    bottom: -13px;  /* Moves it further below the image */
+    margin-left: 225px;       /* Aligns it to the bottom-right */
+    background-color: #0056b3; /* Black background */
+    border: none;
+    border-radius: 50%; /* Circle shape */
+    color: white;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    z-index: 3; /* Ensure it's above other elements */
+}
+
+.camera-icon i {
+    font-size: 1rem; /* Adjust the camera icon size */
+}
+
+.camera-icon:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+
+.logo {
+    max-height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.text-danger {
+    color: red;
+}
+
+        h2 {
+            text-align: center;
+            color: #f8f9fa; /* Light color for heading */
+            font-weight: 700; /* Bold heading */
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .form-field {
+            flex: 1;
+            min-width: calc(50% - 20px); /* Adjust for spacing */
+        }
+
+        .form-floating {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f8f9fa; /* Light color for labels */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid white;
+            /* box-shadow: 0px 10px 10px 0px black; */
+            border-radius: 3px;
+            box-sizing: border-box;
+            background-color: transparent; /* Dark grey background for inputs */
+            color: #fff; /* White text in inputs */
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: darkred;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s, opacity 0.3s; /* Smooth transitions */
+        }
+
+            button:hover {
+                background-color: darkred; /* Darker red on hover */
+                opacity: 0.9;
+            }
+
+        /* Autofill fix */
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px rgba(30, 30, 30, 0.9) inset;
+            -webkit-text-fill-color: #fff;
+        }
+
+
+
+   .form-field:focus {
+    border-color: white;
+}
+
+
+.form-control:focus {
+    border-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+   
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" enctype="multipart/form-data">
+                   
+
+        <!-- User Image Section (Left) -->
+        <div class="profile-picture-wrapper">
+            <!-- Image preview container -->
+
+   <!-- Camera Icon to trigger file input -->
+                <button type="button" class="camera-icon" onclick="document.getElementById('fileInput').click();">
+                    <i class="fas fa-camera"></i>
+                </button>
+            <div id="imagePreview" class="image-preview">
+
+                <!-- Default Profile Image -->
+                <img id="previewImg" src="/web/assets/img/avatar/avatar-13.jpg" alt="Profile Picture" class="profile-picture" />
+                
+                <!-- Hidden file input for image selection -->
+                <input asp-for="Input.ProfilePicture" type="file" id="fileInput" class="form-control-file" accept="image/*" style="display: none;" />
+                
+             
+            </div>
+            <span asp-validation-for="Input.ProfilePicture" class="text-danger"></span>
+        </div>
+
+        <!-- Logo Section (Right) -->
+        <a asp-action="Index" asp-controller="Website">
+            <img src="~/web/assets/img/logo4.png" alt="Logo" class="logo"> <!-- Replace with actual logo URL -->
+        </a>
+
+ <h2>Register YourSelf</h2>
+                    <br />
+                    <div asp-validation-summary="ModelOnly" style="color: red;"></div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.U_Name">Name</label>
+                                <input asp-for="Input.U_Name" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.U_Name" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Email"></label>
+                                <input asp-for="Input.Email" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Email" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Password"></label>
+                                <input asp-for="Input.Password" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Password" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.ConfirmPassword"></label>
+                                <input asp-for="Input.ConfirmPassword" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.ConfirmPassword" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Contact"></label>
+                                <input id="contactNumber" asp-for="Input.Contact" minlength="11" maxlength="11" pattern="\d{11}" required class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Contact" style="color: red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.City"></label>
+                                <input asp-for="Input.City" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.City" style="color: red;"></span>
+                            </div>              
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-field">
+                            <div class="form-floating">
+                                <label asp-for="Input.Country"></label>
+                                <input asp-for="Input.Country" class="form-control" aria-required="true" />
+                                <span asp-validation-for="Input.Country" style="color: red;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="registerSubmit" type="submit" class="btn btn-primary">Register</button>
+                </form>
+                <div class="new-account mt-3">
+                    <p>Already have an account? <a class="text-red" asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    document.getElementById('fileInput').addEventListener('change', function(event){
+        var file = event.target.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+            document.getElementById('previewImg').src = e.target.result; // Update preview with selected image
+        };
+
+        if (file) {
+            reader.readAsDataURL(file); // Read the selected image file
+        }
+    });
+
+
+
+
+
+ document.getElementById('contactNumber').addEventListener('input', function (e) {
+        // This will remove any character that is not a number (0-9)
+        e.target.value = e.target.value.replace(/[^0-9]/g, '');
+    });
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+

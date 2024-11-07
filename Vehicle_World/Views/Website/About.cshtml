@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!-- Include Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<br><br>
+<!-- Sub banner start -->
+<div class="sub-banner bg-dark text-white py-5 animate__animated animate__fadeInDown">
+    <div class="container text-center">
+        <div class="breadcrumb-area">
+            <h1 class="display-4 font-weight-bold">About Us</h1>
+            <ul class="breadcrumbs list-inline mt-3">
+                <li class="list-inline-item"><a asp-action="Index" asp-controller="Website" class="text-white">Home</a></li>
+                <li class="list-inline-item text-white">/ About Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub banner end -->
+
+<!-- About us start -->
+<div class="about-us content-area-7 py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Carousel section -->
+            <div class="col-lg-6 mb-4 mb-lg-0 animate__animated animate__fadeInLeft">
+                <div id="aboutCarousel" class="carousel slide shadow-lg rounded-lg" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#aboutCarousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inners">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 rounded aboutcar" src="@Url.Content("~/web/assets/img/banner/aboutcar.png")" alt="car-6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About us text section -->
+            <div class="col-lg-6 animate__animated animate__fadeInRight">
+                <div class="about-text p-4">
+                    <h3 class="font-weight-bold mb-4">Why Choose Us</h3>
+                    <p class="lead">At Vehicle World, we believe in redefining the car buying experience. With a commitment to quality, reliability, and customer satisfaction, we offer a vast selection of vehicles to suit every need. Whether you're looking for luxury, performance, or economy, we have something for everyone.</p>
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Over 10 years of experience</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> 100% Customer Satisfaction Guarantee</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success mr-2"></i> Premium car collections at competitive prices</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary mt-4 animate__animated animate__bounceIn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- About us end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Custom styling and animation -->
+<style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .aboutcar {
+    
+    filter: drop-shadow(10px 10px 10px black);
+
+    }
+
+
+
+    /* Animate on hover for buttons */
+    .btn-primary:hover {
+        background-color: #0056b3;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Fix layout issue and ensure no horizontal overflow */
+    body, html {
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    .container {
+        max-width: 100%; /* Ensure the container doesn't overflow */
+    }
+
+    /* Ensure images and carousels fit within the container */
+    .carousel-inner img {
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto;
+    }
+
+    /* Smooth and controlled animations */
+    .sub-banner, .about-text, .carousel-inner {
+        animation-duration: 1.2s; /* Slightly quicker animations */
+        animation-timing-function: ease-in-out; /* Smooth in and out */
+    }
+</style>

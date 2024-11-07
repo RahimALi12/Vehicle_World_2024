@@ -1,0 +1,84 @@
+@model IEnumerable<CarDetail>
+
+
+
+@{
+    Layout = "_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "All Featured Cars";
+}
+
+<div class="content-wrapper">
+  <section class="content">
+
+<br>
+
+<h2 class="text-center"><strong>Featured Cars</strong></h2>
+
+<br><br>
+
+<div class="row">
+    @foreach (var car in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="~/images/@car.Image" class="card-img-top" alt="Car Image" style="height: 200px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title mx-2">
+    <strong>@car.MakeType.Name @car.ModelType.Name</strong>
+
+</h5>
+
+                            <h6 class="text-success"><strong>@car.Price.ToString("C")</strong></h6>
+
+
+<br>
+        <p><strong>Year:</strong> @car.Year</p>
+                            <p><strong>Body Type:</strong> @car.BodyType.Name</p>
+                            <p><strong>Engine Type:</strong> @car.EngineType.Name</p>
+                            <p ><strong>Fuel Type:</strong> @car.FuelType.Name</p>
+                            <p><strong>Transmission:</strong> @car.TransmissionType.Name</p>
+                            <p>
+                                <strong>Color:</strong><div style="width: 50px; height: 50px; background-color: @car.Color; border: none;"></div>
+                            </p>
+                            <p><strong>Mileage:</strong> @car.Mileage miles</p>
+                            <p><strong>Seating Capacity:</strong> @car.SeatingCapacity</p>
+
+<!-- Displaying features in a compact layout -->
+<p class="card-text">
+    <strong>Features:</strong> <br> 
+    @(car.BlindspotMonitor ? "Blindspot Monitor, " : "") 
+    @(car.Adaptivecruisecontrol ? "Adaptive Cruise Control, " : "") 
+    @(car.BackupCamera ? "Backup Camera, " : "") 
+    @(car.ForwardCollisionwarning ? "Forward Collision Warning, " : "")
+    @(car.Heatedseats ? "Heated Seats, " : "")
+    @(car.Hillassist ? "Hill Assist, " : "")
+    @(car.Sunroof ? "Sunroof, " : "")
+    @(car.AutoPark ? "Auto Park, " : "")
+    @(car.Automaticemergencybraking ? "Automatic Emergency Braking, " : "")
+    @(car.EvasiveSteering ? "Evasive Steering, " : "")
+    @(car.Leatherseats ? "Leather Seats, " : "")
+    @(car.Remotestart ? "Remote Start, " : "")
+    @(car.USBoutlets ? "USB Outlets, " : "")
+    @(car.Drivercommunicationassistance ? "Driver Communication Assistance, " : "")
+    @(car.AirConditioning ? "Air Conditioning, " : "")
+    @(car.Battery ? "Battery, " : "")
+    @(car.Bluetooth ? "Bluetooth, " : "")
+</p>
+
+  <!-- Unfeature Button -->
+                            <form asp-action="UnfeatureCar" asp-controller="Admin" method="post">
+                                <input type="hidden" name="carId" value="@car.Id" />
+                                <button type="submit" class="btn btn-danger">Unfeature</button>
+                            </form>
+                 
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+ </section>
+</div>

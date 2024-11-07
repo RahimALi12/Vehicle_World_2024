@@ -1,0 +1,164 @@
+﻿@model AppUser
+
+@{
+    Layout = "_AdminLayout";
+}
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    /* Custom styles for the profile form */
+    .card {
+        border-radius: 3px;
+    }
+
+    .card-header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background: linear-gradient(180deg, rgba(31,80,135,1) 0%, rgba(34,88,148,1) 2%, rgba(51,122,203,1) 48%, rgba(30,80,138,1) 52%, rgba(26,64,107,1) 54%, rgba(31,80,135,1) 61%);
+    }
+
+    .position-relative {
+        position: relative;
+    }
+
+    .position-absolute {
+        position: absolute;
+    }
+
+    .fas.fa-camera {
+        font-size: 30px;
+
+    }
+
+    .form-group label {
+        font-size: 0.9em;
+    }
+
+    .btns {
+        padding: 10px 20px;
+        font-size: 1.1em;
+    }
+
+    .img-thumbnail {
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        padding: 5px;
+    }
+
+    .container {
+        max-width: 550px;
+        box-shadow: 0 0 55px rgba(0, 0, 0, 0.1);
+        justify-content: center;
+    }
+
+
+</style>
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header align-middle text-white text-center">
+            <h2 class="pt-1">Admin Profile</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Profile" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" asp-for="ProfileImage" value="@Model.ProfileImage" />
+              
+                @if (ViewBag.ProfileImagePath != null)
+                {
+                    <div class="form-group text-center">
+                        <div class="position-relative d-inline-block">
+                            <img id="profileImagePreview" src="@Url.Content(ViewBag.ProfileImagePath)" alt="Profile Image" class="rounded-circle img-thumbnail" style="max-width: 150px; max-height: 150px;" />
+                        
+                                <label for="ProfilePicture" class="position-absolute" style="bottom: 10px; right: 10px; cursor: pointer;">
+                                    <i class="fas fa-camera fa-2x text-primary"></i>
+                                </label>
+                            <input type="file" name="profilePicture" id="ProfilePicture" class="form-control-file d-none" onchange="previewProfileImage(this);">
+
+                    </div>
+                    </div>
+                    <input type="hidden" asp-for="ProfileImage" value="@ViewBag.ProfileImagePath" />
+                }
+                else
+                {
+                      <input type="hidden" asp-for="ProfileImage" value="@Model.ProfileImage" />
+                    <div class="form-group text-center">
+                        <div class="position-relative d-inline-block">
+                            <img id="profileImagePreview" src="@Model.ProfileImage" alt="Profile" class="rounded-circle img-thumbnail" style="width: 150px; height: 150px;">
+                            <label for="ProfilePicture" class="position-absolute" style="bottom: 10px; right: 10px; cursor: pointer;">
+                                <i class="fas fa-camera fa-2x text-primary"></i>
+                            </label>
+                            <input type="file" name="profilePicture" id="ProfilePicture" class="form-control-file d-none" onchange="previewProfileImage(this);">
+                        </div>
+                    </div>
+                }
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label asp-for="U_Name" class="font-weight-bold">Name</label>
+                        <input asp-for="U_Name" class="form-control" />
+                        <span asp-validation-for="U_Name" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label asp-for="Email" class="font-weight-bold"></label>
+                        <input asp-for="Email" class="form-control" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label asp-for="Contact" class="font-weight-bold"></label>
+                        <input asp-for="Contact" class="form-control" />
+                        <span asp-validation-for="Contact" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="City" class="font-weight-bold"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label asp-for="Country" class="font-weight-bold"></label>
+                        <input asp-for="Country" class="form-control" />
+                        <span asp-validation-for="Country" class="text-danger"></span>
+                    </div>
+                </div>
+                <!-- Add more fields as needed -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btns btn-success" style="background: linear-gradient(180deg, rgba(1,163,25,1) 0%, rgba(0,149,23,1) 2%, rgba(4,198,33,1) 48%, rgba(1,149,23,1) 52%, rgba(1,97,15,1) 54%, rgba(0,103,15,1) 61%);">Save Changes</button>
+                    <a href="@Url.Action("Index")" class="btn btns btn-secondary" style="background: linear-gradient(180deg, rgba(105,105,105,1) 0%, rgba(134,134,134,1) 2%, rgba(177,177,177,1) 48%, rgba(112,112,112,1) 52%, rgba(82,82,82,1) 54%, rgba(105,105,105,1) 61%);">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script>
+        let originalImageUrl = '@Model.ProfileImage';
+
+        function previewProfileImage(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById('profileImagePreview').src = e.target.result;
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        function submitForm(saveChanges) {
+            if (!saveChanges) {
+                // If cancel is clicked, reset the image preview to the original image
+                document.getElementById('profileImagePreview').src = originalImageUrl;
+                // Optionally, reset other form fields as needed
+                return false; // Prevent form submission
+            } else {
+                // If save changes is clicked, submit the form
+                document.getElementById('profileForm').submit();
+            }
+        }
+    </script>
+}

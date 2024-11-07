@@ -1,0 +1,300 @@
+﻿@model Vehicle_World.Models.CarDetail
+
+@{
+    ViewData["Title"] = "Add Car";
+}
+
+
+<style>
+
+    .custom-file-label::after {
+    content: "Browse";
+    color: #fff;
+    background-color: #007bff;
+    border-left: none;
+    padding: 0.5rem 1rem;
+}
+
+.custom-file-label {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+
+
+
+
+    
+    input[type="checkbox"]:checked {
+        background-color: dodgerblue !important;
+        color: #ffffff !important;
+    }
+
+    input[type="checkbox"]:after {
+        box-shadow: none !important;
+    }
+
+    .carstyling{
+        background: white;
+        box-shadow: 0px 0px 7px 0px rgba(0 , 0 , 0 , 0.3);
+        border-radius: 0px;
+    }
+
+
+
+
+</style>
+
+
+
+<hr class="mb-4" />
+
+<div class="container-fluid">
+
+<div class="row justify-content-center" style="margin-top: 130px; margin-bottom: 100px;">
+    <div class="col-md-8 carstyling">
+
+        <h2 class="text-center mt-4 mb-4">Add New Car</h2>
+
+        <form asp-action="AddCar" asp-controller="Seller" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+   @if (ViewBag.SellerId != null)
+    {
+        <input type="hidden" name="sellerId" value="@ViewBag.SellerId" />
+    }
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label asp-for="MakeTypeId" class="form-label">Make</label>
+                    <select asp-for="MakeTypeId" asp-items="ViewBag.MakeTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="ModelTypeId" class="form-label">Model</label>
+                    <select asp-for="ModelTypeId" asp-items="ViewBag.ModelTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="BodyTypeId" class="form-label">Body Type</label>
+                    <select asp-for="BodyTypeId" asp-items="ViewBag.BodyTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="EngineTypeId" class="form-label">Engine Type</label>
+                    <select asp-for="EngineTypeId" asp-items="ViewBag.EngineTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="FuelTypeId" class="form-label">Fuel Type</label>
+                    <select asp-for="FuelTypeId" asp-items="ViewBag.FuelTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="TransmissionTypeId" class="form-label">Transmission Type</label>
+                    <select asp-for="TransmissionTypeId" asp-items="ViewBag.TransmissionTypes" class="form-control"></select>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Year" class="form-label">Year</label>
+                    <select class="form-control" id="Year" name="Year" required>
+                        @for (int year = 2024; year >= 1886; year--)
+                        {
+                                <option value="@year">@year</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Color" class="form-label">Color</label>
+
+                    <input type="color" asp-for="Color" class="form-control" />
+
+                    <span asp-validation-for="Color" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Mileage" class="form-label">Mileage (KM)</label>
+                    <select asp-for="Mileage" class="form-control" id="Mileage" name="Mileage" required>
+                        @for (double i = 5; i <= 30; i += 0.5)
+                        {
+                                <option value="@i">@i km/l</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Mileage" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="SeatingCapacity" class="form-label">Seating Capacity</label>
+                    <select asp-for="SeatingCapacity" class="form-control" id="SeatingCapacity" name="SeatingCapacity" required>
+                        @for (int i = 2; i <= 72; i++)
+                        {
+                                <option value="@i">@i</option>
+                        }
+                    </select>
+                    <span asp-validation-for="SeatingCapacity" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="Price" class="form-label">Price</label>
+                    <select asp-for="Price" class="form-control" id="Price" name="Price" required>
+                        @for (int i = 1000; i <= 100000; i += 5000)
+                        {
+                                <option value="@i">$@i</option>
+                        }
+                    </select>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="ConditionTypeId" class="form-label">Condition</label>
+                    <select asp-for="ConditionTypeId" asp-items="ViewBag.ConditionTypes" class="form-control"></select>
+                </div>
+
+           <div class="col-md-12 mb-4">
+    <label asp-for="CarImage" class="form-label">Car Image</label>
+    <div class="custom-file">
+        <input type="file" class="custom-file-input" asp-for="CarImage" id="CarImageInput" accept="image/*" onchange="showCarImagePreview(event)">
+        <label class="custom-file-label" for="CarImageInput">Choose file</label>
+    </div>
+    <span asp-validation-for="CarImage" class="text-danger"></span>
+</div>
+
+<!-- Image preview -->
+<div class="col-md-12 col-lg-12 mb-4" style="text-align: center;">
+    <img id="carImagePreview" src="#" alt="Car Image Preview" style="display:none; width: 50%; max-height: 300px; margin: 20px auto 0;" />
+</div>
+
+
+
+            </div>
+
+            <div class="form-group mb-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input asp-for="BlindspotMonitor" class="form-check-input" type="checkbox" />
+                            <label asp-for="BlindspotMonitor" class="form-check-label">Blindspot Monitor</label>
+                        </div>
+                    
+
+                        <div class="form-check">
+                            <input asp-for="Adaptivecruisecontrol" class="form-check-input" type="checkbox" />
+                            <label asp-for="Adaptivecruisecontrol" class="form-check-label">Adaptive Cruise Control</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="BackupCamera" class="form-check-input" type="checkbox" />
+                            <label asp-for="BackupCamera" class="form-check-label">Backup Camera</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="ForwardCollisionwarning" class="form-check-input" type="checkbox" />
+                            <label asp-for="ForwardCollisionwarning" class="form-check-label">Forward Collision Warning</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Heatedseats" class="form-check-input" type="checkbox" />
+                            <label asp-for="Heatedseats" class="form-check-label">Heated Seats</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Hillassist" class="form-check-input" type="checkbox" />
+                            <label asp-for="Hillassist" class="form-check-label">Hill Assist</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Sunroof" class="form-check-input" type="checkbox" />
+                            <label asp-for="Sunroof" class="form-check-label">Sunroof</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="AutoPark" class="form-check-input" type="checkbox" />
+                            <label asp-for="AutoPark" class="form-check-label">Auto Park</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Automaticemergencybraking" class="form-check-input" type="checkbox" />
+                            <label asp-for="Automaticemergencybraking" class="form-check-label">Automatic Emergency Braking</label>
+                        </div>
+                      
+                    </div>
+                    @* <div class="col-md-6"> *@
+                
+                    @* </div> *@
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input asp-for="EvasiveSteering" class="form-check-input" type="checkbox" />
+                            <label asp-for="EvasiveSteering" class="form-check-label">Evasive Steering</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Leatherseats" class="form-check-input" type="checkbox" />
+                            <label asp-for="Leatherseats" class="form-check-label">Leather Seats</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="Remotestart" class="form-check-input" type="checkbox" />
+                            <label asp-for="Remotestart" class="form-check-label">Remote Start</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="USBoutlets" class="form-check-input" type="checkbox" />
+                            <label asp-for="USBoutlets" class="form-check-label">USB Outlets</label>
+                        </div>
+                        <div class="form-check">
+                            <input asp-for="AirConditioning" class="form-check-input" type="checkbox" />
+                            <label asp-for="AirConditioning" class="form-check-label">AirConditioning</label>
+                        </div>
+                         <div class="form-check">
+                            <input asp-for="Drivercommunicationassistance" class="form-check-input" type="checkbox" />
+                            <label asp-for="Drivercommunicationassistance" class="form-check-label">Drivercommunicationassistance</label>
+                        </div>
+                         <div class="form-check">
+                            <input asp-for="Battery" class="form-check-input" type="checkbox" />
+                            <label asp-for="Battery" class="form-check-label">Battery</label>
+                        </div>
+                         <div class="form-check">
+                            <input asp-for="Bluetooth" class="form-check-input" type="checkbox" />
+                            <label asp-for="Bluetooth" class="form-check-label">Bluetooth</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary w-25 rounded-0" style="background: linear-gradient(180deg, rgba(22,107,162,1) 0%, rgba(0,126,209,1) 2%, rgba(57,178,255,1) 48%, rgba(10,102,161,1) 50%, rgba(4,129,210,1) 54%, rgba(0,136,201,1) 61%);">Add Car</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<script>
+    function showCarImagePreview(event) {
+        var input = event.target;
+        var file = input.files[0];
+        
+        if (file) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                var previewImg = document.getElementById('carImagePreview');
+                previewImg.src = e.target.result;
+                previewImg.style.display = 'block'; // Show the image
+            };
+            
+            reader.readAsDataURL(file); // Convert the file to a data URL
+        }
+    }
+</script>
+
+
+
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
